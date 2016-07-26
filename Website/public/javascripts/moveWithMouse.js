@@ -22,7 +22,7 @@ function moveWithMouse() {
     $('#subtitle').css('textShadow', shadowAttr);
 
     shadowAttr = getShadowAttr(relativePos, -0.006, -0.003, 0, 10, '#666');
-    $('#backbar').css('boxShadow', shadowAttr);
+    $('#topbar').css('boxShadow', shadowAttr);
 
     //$('a.navbar-brand').css('boxShadow', shadowAttr);
 
