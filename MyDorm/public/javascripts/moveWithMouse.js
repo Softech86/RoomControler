@@ -3,7 +3,7 @@ function getMousePos(event) {
       return {x : e.clientX, y : e.clientY} 
 } 
 
-function getShadowAttr(pos, scaleX = 1, scaleY = 1, dx = 3, dy = 3, color = '#889') {
+function getShadowAttr(pos, scaleX=1, scaleY = 1, dx = 3, dy = 3, color = '#889') {
     return color + ' ' + (pos.x * scaleX + dx) + 'px ' + (pos.y * scaleY + dy) + 'px 15px';
 }
 

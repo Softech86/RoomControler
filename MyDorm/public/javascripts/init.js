@@ -1,9 +1,19 @@
 function init() {
     $('#copyright').css('color', '#aab');
 
+    setColor();
+
     bgResize();
     startTime();
     startAni();
+
+    bgResize();
+    window.onresize = bgResize;
+}
+
+function setColor() {
+    $(".title").css('text-shadow', "#889 0px 0px 15px");
+    $('.copyright').css('color', "#aab");
 }
 
 function startAni() {

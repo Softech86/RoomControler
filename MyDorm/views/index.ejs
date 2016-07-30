@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=”icon” href=”/images/icon.ico” type=”image/x-icon”>
+        <title>MyDorm - <%= title %></title>
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="/javascripts/init.js"></script>
+        <script src="/javascripts/resize.js"></script>
+        <script src="/javascripts/moveWithMouse.js"></script>
+    </head>
+
+    <body onload = "init()" onmousemove = "moveWithMouse()">
+        <div id="bodyback" class="bodyback"></div>
+        <div id="bodytop" class="bodytop">
+            <nav id="topbar" class="navbar navbar-inverse transparentBar">
+                <div class="phoneScreen">
+                    TODO: 这是手机页面呀
+                </div>
+                <div class="pcScreen">
+                    <div class="col-md-1 col-sm-0"></div>
+                    <div class="col-md-10 col-sm-12">
+                        <a class = "navbar-brand" href = "#">
+                            <span id="homeIcon" class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        </a>
+                        <a class="navbar-brand" href="#">Watching</a>
+                        <a class="navbar-brand" href="#">Control</a>
+                        <a class="navbar-brand" href="#">Message</a>
+                        <a class="navbar-brand" href="#">Schedule</a>
+                        <a class="navbar-brand" style="margin-right:0%" href="#">Leisure</a>
+                        <div class="navbar-brand">
+                            <div id="clock" style="float:right"></div>
+                            <span id="timeIcon" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                            <div id="greeting" style="float:right"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-0"></div>
+                </div>
+            </nav>
+        </div>
+        <div id="bodyfront" class="bodyfront">
+            <div>
+                <center id="title" class="title">My Dorm</center>
+                <center id="subtitle" class="title subtitle">A Room Control System</center>
+                <div id="out"></div>
+            </div>
+        </div>
+        <div style="margin-bottom: -25px;">
+            <center id="copyright" class="copyright">
+                <h5>Designed by Leo Bai, Tongji University.</h5>
+                <h5>Copyright © 2016-2016 Softech. All Rights Reserved.</h5>
+            </center>
+        </div>
+
+    </body>
+    }
+</html>
