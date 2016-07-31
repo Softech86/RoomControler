@@ -18,7 +18,6 @@ function moveWithMouse() {
     var pos = getMousePos();
     var center = {x: document.documentElement.clientWidth / 2, y: document.documentElement.clientHeight / 2}; 
     var relativePos =  {x: pos.x - center.x, y: pos.y - center.y};
-    $('#out').html([pos.x, pos.y, center.x * 2, center.y * 2, relativePos.x, relativePos.y].toString());
 
     var shadowAttr = getShadowAttr(relativePos, -0.01, -0.01);
     $('#title').css('textShadow', shadowAttr);

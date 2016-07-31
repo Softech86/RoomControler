@@ -1,3 +1,7 @@
+#out:before {
+    content: "DEBUG: ";
+}
+
 a.navbar-brand {
     margin-right:calc( 16% - 120px);
 }

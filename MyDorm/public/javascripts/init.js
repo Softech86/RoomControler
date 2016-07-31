@@ -31,6 +31,8 @@ function init() {
 
     bgResize();
     window.onresize = bgResize;
+
+    $('#out').html(navigator.platform);
 }
 
 function setColor() {
