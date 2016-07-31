@@ -54,11 +54,11 @@ div.navbar-brand {
     margin-right:4%;
 }
 body{
-    background-size:100%;
-    /*background-color:-moz-linear-gradient(top,#334,#000);*/
-    background-image:-webkit-gradient(linear, 0% 0%, 0% 80%,from(#334), to(#000));
+    background-size: 100%;
+    background-color: #000;
+    /*background-image:-webkit-gradient(linear, 0% 0%, 0% 80%,from(#334), to(#000));
     background-repeat: no-repeat;
-    background-attachment:absolute;
+    background-attachment:absolute;*/
     
     -webkit-user-select:none;
     -moz-user-select:none;
@@ -85,7 +85,7 @@ body{
 @keyframes raiseup
 {
 0%   {background:#000;height:100px;}
-100% {background:#eee;height:100px;}
+100% {background:#bbc;height:100px;}
 }
 
 .bodyback {
@@ -107,13 +107,9 @@ body{
 @keyframes daylight
 {
 0%   {background:#000;}
-100% {background:#eee;}
+100% {background:#bbc;}
 }
 
-.form-control:focus{
-    border-color:#556;
-    outline:0;
-    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(68,68,128,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(68,68,128,.6)}
 .title {
     /*line-height: 320%;*/
     position: relative;
@@ -152,15 +148,44 @@ body{
     color: #000;
 }
 
+#cvs {
+    position: absolute;
+    top: -10000px;
+    z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
     .pcScreen {
         display: none;
     }
+
     .phoneScreen {
         display: inline;
     }
+
     h5 {
         font-size: 5px;
+    }
+
+    .bodytop {
+        background: #bbc;
+        height: 100px;
+        animation: none 0 ease;
+    }
+    .bodyback {
+        background:#bbc;
+        animation: none 0 ease;
+    }
+    .title {
+        color:#ccc;
+        font-size: 30px;
+        text-shadow: #99a;
+        animation: none 0 ease;
+        position: absolute;
+        z-index: 2048;
+    }
+    .subtitle {
+        display: none;
     }
 }
 @media screen and (min-width: 768px) {

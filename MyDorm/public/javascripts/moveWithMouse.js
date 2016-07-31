@@ -12,6 +12,9 @@ function getPositionAttr(pos, scaleX = 1, scaleY = 1) {
 }
 
 function moveWithMouse() {
+    if (parseFloat($('#bodyback').css('width')) <= 768)
+        return;
+
     var pos = getMousePos();
     var center = {x: document.documentElement.clientWidth / 2, y: document.documentElement.clientHeight / 2}; 
     var relativePos =  {x: pos.x - center.x, y: pos.y - center.y};
