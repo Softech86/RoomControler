@@ -1,4 +1,6 @@
-var pagedown = false;
+var
+    pagedown = false,
+    isPhone = true;
 
 function nextpage() {
     pagedown = true;
@@ -21,7 +23,11 @@ function nextpage() {
 }
 
 function init() {
-    $('#copyright').css('color', '#aab');
+
+    if (judgePhone()) {
+        window.location.href = '/m';
+        return;
+    }
 
     setColor();
 
@@ -32,7 +38,18 @@ function init() {
     bgResize();
     window.onresize = bgResize;
 
-    $('#out').html(navigator.platform);
+    $('#out').html(navigator.platform + ' ' + document.documentElement.clientHeight);
+}
+
+function judgePhone() {
+    var p = navigator.platform;
+    isPhone =
+        ((p.indexOf("Win") == 0) ||
+        (p.indexOf("Mac") == 0) ||
+        (p == "X11") || (p.indexOf("Linux") == 0))
+        &&
+        (parseFloat($('#bodyback').css('width')) <= 768);
+    return isPhone;
 }
 
 function setColor() {

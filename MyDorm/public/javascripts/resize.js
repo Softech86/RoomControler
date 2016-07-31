@@ -23,8 +23,8 @@ function bgResize() {
     $('#topcvs').width(width + 'px');
     $('#topcvs').height($('#cvs').height() + 'px');
 
-    if (width <= 768) { //phone page
-        windowHeight = document.documentElement.clientHeight;
+    if (judgePhone()) { //phone page
+        var windowHeight = document.documentElement.clientHeight;
         $('#bodytop').height(windowHeight - $('#bodyfront').height());
         $('#cvs').css('top', windowHeight - $('#cvs').height() - 32);
         $('#bodyback').css('height', windowHeight - 32 + 'px');
