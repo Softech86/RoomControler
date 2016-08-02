@@ -1,0 +1,24 @@
+.debug {
+    width: 50px;
+    height: 20px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #aaa;
+}
+
+.debug div {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+
+    background-color: #ccc;
+}
+
+.debug:after {
+    content: "DEBUG";
+    color: #000;
+}
+

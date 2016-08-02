@@ -1,0 +1,33 @@
+<% include header_m.ejs %>
+
+<nav id="topbar" class="navbar navbar-inverse">
+    <div class = "navbar-brand" href = "#" style="float: left; width: 15%">
+        <span class="moreBtn">
+            <span class="page" id="page-l"></span>
+            <span class="page" id="page-m"></span>
+            <span class="page" id="page-r"></span>
+        </span>
+    </div>
+
+    <span class="title">
+    MyDorm
+</span>
+    <div class = "navbar-brand" href = "#" style="float: right;width: 15%; margin-right: 0px;">
+        <div class = "clock" style="display: none">
+            <div class = "dial"></div>
+            <div class = "minute"></div>
+            <div class = "hour"></div>
+        </div>
+        <div class="clock-dig">
+            <div class="hour"></div>
+            <div class="minute"></div>
+            <style></style>
+        </div>
+    </div>
+</nav>
+
+
+<% for (var i = 0; i < 50; ++i) { %>
+<p><%= i %></p>
+<% } %>
+<% include footer.ejs %>

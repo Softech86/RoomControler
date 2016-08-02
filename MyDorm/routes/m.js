@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '首页', layout: 'layout.ejs'});
+    res.render('index_m', { title: '手机版' });
 });
 
 module.exports = router;

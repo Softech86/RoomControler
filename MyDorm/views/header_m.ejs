@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=”icon” href=”/favicon.ico” type=”image/x-icon”>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyDorm - <%= title %></title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="/javascripts/time.js"></script>
+    <script src="/javascripts/init.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/header_m.css">
+    <script>
+        (
+            function(){
+                var ua=navigator.userAgent.toLowerCase();
+                var bIsIpad=ua.match(/ipad/i)=="ipad";
+                var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";
+                var bIsAndroid=ua.match(/android/i)=="android";
+                var bIsWM=ua.match(/windows mobile/i)=="windows mobile";
+                if(!(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM)){
+                    window.location.href="/"
+                }
+            }
+        )();
+
+    </script>
+</head>
+
+<body>
