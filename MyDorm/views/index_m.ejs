@@ -8,10 +8,9 @@
             <span class="page" id="page-r"></span>
         </span>
     </div>
-
     <span class="title">
-    MyDorm
-</span>
+        MyDorm
+    </span>
     <div class = "navbar-brand" href = "#" style="float: right;width: 15%; margin-right: 0px;">
         <div class = "clock" style="display: none">
             <div class = "dial"></div>
@@ -26,8 +25,21 @@
     </div>
 </nav>
 
+<div id="list">
+    <ul class="list-group">
+        <li class="list-group-item">Watching</li>
+        <li class="list-group-item">Control</li>
+        <li class="list-group-item">Message</li>
+        <li class="list-group-item">Schedule</li>
+        <li class="list-group-item">Leisure</li>
+        <li class="list-group-item">About</li>
+    </ul>
+    <div class="city"></div>
+</div>
 
-<% for (var i = 0; i < 50; ++i) { %>
-<p><%= i %></p>
-<% } %>
-<% include footer.ejs %>
+<div id="display">
+    <% for (var i = 0; i < 50; ++i) { %>
+    <p><%= i %></p>
+    <% } %>
+    <% include footer.ejs %>
+</div>

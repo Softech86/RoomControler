@@ -1,3 +1,7 @@
+body {
+    transition: all 0.5s ease-in-out;
+}
+
 .navbar {
     opacity:0.95;
 }
@@ -192,4 +196,25 @@
     border: #bbb solid;
     border-width: 0px 2px 0px 0px;
     position: absolute;
+}
+
+.darkBg {
+    background-color: #000;
+}
+
+#list {
+    background-color: transparent;
+    display: none;
+    margin: auto;
+    width: 90%;
+}
+
+.list-group {
+    border-width: 0px;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #ddd;
+    font-size: 18px;
 }

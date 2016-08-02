@@ -20,8 +20,11 @@ function setMoreBtn() {
         $("#page-m").toggleClass("page-rotate").toggleClass("page-m-rotate");
         $("#page-r").toggleClass("page-rotate").toggleClass("page-r-rotate");
 
+        $("body").toggleClass("darkBg");
+        $("#topbar").toggleClass("darkBg");
 
-
+        $("#list").slideToggle(500);
+        $("#display").slideToggle(500);
     });
 }
 
