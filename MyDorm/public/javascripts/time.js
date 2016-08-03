@@ -34,7 +34,7 @@ function startTime() {
     //$('.clock-sm').html(h+":"+m);
     $('.clock .minute').css("transform", "rotate(" + 6 * m + "deg)");
     $('.clock .hour').css("transform", "rotate(" + Number.parseInt(30 * h + 0.5 * m) + "deg)")
-    setTimeout('startTime()',500);
+    setTimeout("startTime()", 500);
 }
 
 function checkTime(i) {

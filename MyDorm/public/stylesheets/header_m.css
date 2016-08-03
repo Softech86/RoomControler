@@ -203,18 +203,84 @@ body {
 }
 
 #list {
-    background-color: transparent;
     display: none;
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
 .list-group {
     border-width: 0px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1000px;
+
+    transition: margin-bottom 0.3s ease-in-out;
 }
 
 .list-group-item {
     background-color: transparent;
     color: #ddd;
     font-size: 18px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item div {
+    float: left;
+    background-color: #fff;
+    background: linear-gradient(to right, #ddf 0%,#000 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item a {
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    float: left;
+    width: 90%;
+}
+a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: #f00;
+}
+
+
+.city {
+    background: url(/images/city.gif);
+    background-color: transparent;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width: 100%;
+    bottom: 0px;
+    float: left;
+    left: 0px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    margin-top: 50px;
+}
+
+#copyright {
+    font-size: 5px;
+    color: #999;
+    background: transparent;linear-gradient(to bottom, #000 0%,#000 100%);
+    opacity: 0.9;
+    text-align: center;
+    line-height: 150%;
+    z-index: -1;
+}
+
+#copyright:before {
+    content: "Designed by Leo Bai, Tongji University.";
+}
+
+#copyright:after {
+    content: "Copyright © 2016-2016 Softech. All Rights Reserved.";
 }

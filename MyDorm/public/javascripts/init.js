@@ -1,13 +1,42 @@
 function init(title) {
     setPage();
+    $(window).resize(function() {
+        setPage();
+    });
+
     setDebug(title);
     setMoreBtn();
     setClock();
+    $(".moreBtn").click();
 }
 
 function setPage() {
+    console.log("before" + $(".list-group").css("margin-bottom"));
+    //TODO: rewrite! 太差了! 重构!
+    $(".city").height(parseInt($("body").width() / 2800 * 991));
 
+    console.log($(".city").offset().top);
+    console.log($(".city").height());
+
+    var
+        h = $(window).height() - $(".city").offset().top - $(".city").height() + parseFloat($(".list-group").css("margin-bottom")),
+        min = parseInt($(".city").height() * 0.2);
+    $(".list-group").css("margin-bottom", (h >= min ? h : min) + "px");
+
+    console.log("after" + $(".list-group").css("margin-bottom"));
 }
+
+var thisListItem;
+function listClicked() {
+    $(".list-group-item a").css("opacity", "0.3");
+    $(".list-group-item").css("border-color", "transparent");
+    thisListItem.css("opacity", "1.0");
+    thisListItem.css("color", "#fff");
+    thisListItem.prev().css("background-color", "#fff");
+    thisListItem.prev().css("width", "100%");
+    //thisListItem.parent().css("background-color", "#555");
+    //thisListItem.parent().css("background", "linear-gradient(to right, #000 0%,#fff 100%)")
+};
 
 function setMoreBtn() {
     /*$(".moreBtn").click(function() {
@@ -23,9 +52,35 @@ function setMoreBtn() {
         $("body").toggleClass("darkBg");
         $("#topbar").toggleClass("darkBg");
 
-        $("#list").slideToggle(500);
-        $("#display").slideToggle(500);
+        $("#list").slideToggle(500, setPage);
+        $("#display").slideToggle(400);
     });
+
+    $("body").click(function() {
+        $(".list-group-item a").css("opacity", "1.0");
+        $(".list-group-item").css("border-color", "#888");
+        //$(".list-group-item").css("background-color", "transparent");
+        //$(".list-group-item").css("background", "none");
+        $(".list-group-item div").css("width", "0");
+        //$(".list-group-item div").css("background-color", "transparent");
+    });
+
+    /*listClicked = () => {
+        $(".list-group-item a").css("opacity", "0.3");
+        $(".list-group-item").css("border-color", "transparent");
+        thisListItem.css("opacity", "1.0");
+        thisListItem.css("color", "#fff");
+        thisListItem.prev().css("background-color", "#fff");
+        thisListItem.prev().css("width", "100%");
+        //thisListItem.parent().css("background-color", "#555");
+        //thisListItem.parent().css("background", "linear-gradient(to right, #000 0%,#fff 100%)")
+    };*/
+
+    $(".list-group-item a").click(function() {
+        thisListItem = $(this);
+        setTimeout("listClicked()", 1);
+    });
+
 }
 
 

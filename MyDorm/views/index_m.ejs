@@ -27,19 +27,21 @@
 
 <div id="list">
     <ul class="list-group">
-        <li class="list-group-item">Watching</li>
-        <li class="list-group-item">Control</li>
-        <li class="list-group-item">Message</li>
-        <li class="list-group-item">Schedule</li>
-        <li class="list-group-item">Leisure</li>
-        <li class="list-group-item">About</li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Watching</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Control</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Message</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Schedule</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Leisure</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">About</a></li>
     </ul>
     <div class="city"></div>
 </div>
 
+
 <div id="display">
-    <% for (var i = 0; i < 50; ++i) { %>
+    <% for (var i = 0; i < 5.0; ++i) { %>
     <p><%= i %></p>
     <% } %>
-    <% include footer.ejs %>
 </div>
+
+<% include footer.ejs %>
