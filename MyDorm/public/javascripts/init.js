@@ -7,7 +7,7 @@ function init(title) {
     setDebug(title);
     setMoreBtn();
     setClock();
-    $(".moreBtn").click();
+    typeOnNotebook();
 }
 
 function setPage() {
@@ -29,7 +29,7 @@ function setPage() {
 var thisListItem;
 function listClicked() {
     $(".list-group-item a").css("opacity", "0.3");
-    $(".list-group-item").css("border-color", "transparent");
+    //$(".list-group-item").css("border-color", "transparent");
     thisListItem.css("opacity", "1.0");
     thisListItem.css("color", "#fff");
     thisListItem.prev().css("background-color", "#fff");
@@ -58,7 +58,7 @@ function setMoreBtn() {
 
     $("body").click(function() {
         $(".list-group-item a").css("opacity", "1.0");
-        $(".list-group-item").css("border-color", "#888");
+        //$(".list-group-item").css("border-color", "transparent");
         //$(".list-group-item").css("background-color", "transparent");
         //$(".list-group-item").css("background", "none");
         $(".list-group-item div").css("width", "0");
@@ -110,4 +110,61 @@ function setDebug(title) {
         else
             $(".debug").animate({width: "100%"}, 300, function() {$(".debug div").slideToggle(300);});
     });
+}
+
+var l1 = "$ ", l2 = "", l3 = "", adder;
+
+function fresh() {
+    $("#l1").html(l1);
+    $("#l2").html(l2);
+    $("#l3").html(l3);
+}
+
+function appendText(id, text, step, delay) {
+    adder += delay;
+
+    for (var i = 0; i < text.length; ++i) {
+        adder += step;
+        setTimeout(id + '+="' + text[i] + '"; fresh();', adder);
+    }
+}
+
+function clrscr(delay) {
+    adder += delay;
+
+    rollText(0);
+    rollText(0);
+    rollText(0);
+}
+
+function rollText(delay) {
+    adder += delay;
+
+    setTimeout("l1 = l2; l2 = l3; l3 = ''; fresh();", adder);
+}
+
+function typeOnNotebook() {
+    var cmds = [
+        "brew install",
+        "Girlfriend",
+        " available formula with the name \"girlfriend\""
+    ];
+    adder = 0;
+
+    appendText("l1", "", 0, 0);
+    appendText("l1", "brew install", 100, 500);
+    appendText("l2", "Girlfriend", 100, 0);
+    appendText("l3", "Error: No", 5, 1000);
+    rollText(200);
+    appendText("l3", "available", 5, 0);
+    rollText(200);
+    appendText("l3", "^C", 5, 0);
+    rollText(500);
+    appendText("l3", "$ ", 5, 0);
+    appendText("l3", "clear", 5, 1000);
+    rollText(100);
+    clrscr(500);
+    appendText("l1", "$ ", 5, 0);
+
+    setTimeout("typeOnNotebook()", 10000);
 }
