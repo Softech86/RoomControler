@@ -52,6 +52,7 @@ function setMoreBtn() {
         $("body").toggleClass("darkBg");
         $("#topbar").toggleClass("darkBg");
 
+        /*
         $(".guitar-sm").toggleClass("hide-left");
         $(".guitar-sm").toggleClass("show-left");
 
@@ -60,7 +61,7 @@ function setMoreBtn() {
 
         $(".coffee-sm").toggleClass("hide-right");
         $(".coffee-sm").toggleClass("show-right");
-
+        */
 
         $("#list").slideToggle(500, setPage);
         $("#display").slideToggle(400);

@@ -280,7 +280,9 @@ a:focus, a:hover, a:active {
     opacity: 0.9;
     text-align: center;
     line-height: 150%;
+    width: 100%;
     z-index: -1;
+    margin-top: 80px;
 }
 
 #copyright:before {
@@ -295,6 +297,7 @@ a:focus, a:hover, a:active {
     width: 100%;
     height: 205px;
     background-color: #334;
+    position: absolute;
 }
 
 .logo {
@@ -386,7 +389,7 @@ a:focus, a:hover, a:active {
 {
     0%   {margin-right: -500px;}
     100% {margin-right: 0px;}
-}*/
+}
 
 .hide-left, .hide-right {
     display: none;
@@ -394,4 +397,5 @@ a:focus, a:hover, a:active {
 
 .show-left, .show-left {
     display: block;
-}
+}*/
+
