@@ -52,6 +52,16 @@ function setMoreBtn() {
         $("body").toggleClass("darkBg");
         $("#topbar").toggleClass("darkBg");
 
+        $(".guitar-sm").toggleClass("hide-left");
+        $(".guitar-sm").toggleClass("show-left");
+
+        $(".notebook-sm").toggleClass("hide-right");
+        $(".notebook-sm").toggleClass("show-right");
+
+        $(".coffee-sm").toggleClass("hide-right");
+        $(".coffee-sm").toggleClass("show-right");
+
+
         $("#list").slideToggle(500, setPage);
         $("#display").slideToggle(400);
     });
@@ -149,19 +159,20 @@ function typeOnNotebook() {
         "Girlfriend",
         " available formula with the name \"girlfriend\""
     ];
+    console.log(adder);
     adder = 0;
 
     appendText("l1", "", 0, 0);
     appendText("l1", "brew install", 100, 500);
     appendText("l2", "Girlfriend", 100, 0);
-    appendText("l3", "Error: No", 5, 1000);
+    appendText("l3", "Error: No", 5, 2000);
     rollText(200);
     appendText("l3", "available", 5, 0);
     rollText(200);
     appendText("l3", "^C", 5, 0);
     rollText(500);
     appendText("l3", "$ ", 5, 0);
-    appendText("l3", "clear", 5, 1000);
+    appendText("l3", "clear", 5, 2000);
     rollText(100);
     clrscr(500);
     appendText("l1", "$ ", 5, 0);

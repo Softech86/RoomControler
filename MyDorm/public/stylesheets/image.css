@@ -69,7 +69,7 @@
     position: absolute;
     z-index: 1;
     right:5px;
-    top: 185px;
+    top: 192px;
 }
 .notebook-sm .screen:before {
     content: "";
@@ -130,7 +130,7 @@
     position: absolute;
     z-index: 1;
     right: 120px;
-    top: 226px;
+    top: 233px;
 }
 
 .coffee-sm .cup {
@@ -188,6 +188,7 @@
     right: 3px;
     z-index: 1;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .coffee-sm .ear:after {
@@ -233,6 +234,7 @@
     border-color: transparent #ecb transparent transparent;
 
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
 }
 
 .coffee-sm .steam:after {
@@ -247,6 +249,7 @@
     border-radius: 0 0 4px 4px;
     border-color: transparent transparent #ecb #ecb;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .coffee-sm .steams {
@@ -260,6 +263,7 @@
     border-radius: 0 0 0 3px;
     border-color: transparent transparent #ecb #ecb;
     transform: rotate(64deg);
+    -webkit-transform: rotate(64deg);
 }
 
 .coffee-sm .steams:after {
@@ -274,5 +278,459 @@
     border-radius:  0 2px 0 0;
     border-color: #ecb #ecb transparent transparent;
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm {
+    position: absolute;
+    top: 168px;
+    left: 12px;
+    opacity: 0.9;
+    transform: rotate(-23deg);
+    -webkit-transform: rotate(-23deg);
+}
+
+.guitar-sm .guitar-body {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+}
+
+.guitar-sm .guitar-body .shoulder{
+    width: 60px;
+    height: 28px;
+    border-radius: 10px 10px 18px 18px;
+    background-color: #fda;
+    margin: auto;
+    top: 2px;
+    left: 10px;
+    position: absolute;
+}
+
+.guitar-sm .guitar-body .shoulder:before {
+    content: "";
+    width: 50px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fda;
+    margin: auto;
+    top: -2px;
+    left: 5px;
+    position: absolute;
+}
+
+.guitar-sm .guitar-body .empty-l{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color:  transparent #fda transparent transparent;
+    position: absolute;
+    margin: auto;
+    bottom: 33px;
+    left: -25px;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+
+
+.guitar-sm .guitar-body .empty-l:before{
+    content: "";
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fda;
+    position: absolute;
+    margin: auto;
+    bottom: -27px;
+    left: 12px;
+    transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+}
+
+.guitar-sm .guitar-body .empty-r{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color:  transparent transparent transparent #fda;
+    position: absolute;
+    margin: auto;
+    bottom: 33px;
+    right: -25px;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+
+.guitar-sm .guitar-body .empty-r:before{
+    content: "";
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fda;
+    position: absolute;
+    margin: auto;
+    bottom: -27px;
+    right: 12px;
+    transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+}
+
+.guitar-sm .guitar-body .bottom{
+    width: 80px;
+    height: 60px;
+    border-radius: 50% 50% 40% 40% ;
+    background-color: #fda;
+    position: absolute;
+    margin: auto;
+    bottom: 0px;
+}
+
+.guitar-sm .guitar-body .bottom:before {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    height: 2px;
+    width: 120px;
+    margin: 54px 0px 0px -48px;
+    border-radius: 100%;
+    z-index: -1;
+    transform: rotate(23deg);
+    -webkit-transform: rotate(23deg);
+}
+
+
+.guitar-sm .guitar-body .middle{
+    width: 26px;
+    height: 26px;
+    border: 3px #ffd double;
+    background-color: #211;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 18px;
+    left: 27px;
+    z-index: 1;
+}
+
+.guitar-sm .guitar-body .bridge{
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    margin: auto;
+    border-radius: 1px;
+    top: 60px;
+    left: 25px;
+    background-color: #000;
+}
+.guitar-sm .guitar-body .bridge:before{
+    content: "";
+    width: 20px;
+    height: 7px;
+    left: 5px;
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.guitar-sm .guitar-body .bridge:after {
+    content: "";
+    width: 16px;
+    height: 1px;
+    left: 7px;
+    position: absolute;
+    margin: auto;
+    background-color: #eec;
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    top: 1px;
+}
+
+.guitar-sm .guitar-neck {
+    height: 240px;
+    width: 12px;
+    border: solid;
+    border-color: transparent transparent #544 transparent;
+    position: absolute;
+    border-width: 0px 2px 120px 2px;
+    top: -220px;
+    left: 34px;
+    z-index: 2;
+}
+
+.guitar-sm .guitar-head {
+    width: 14px;
+    height: 20px;
+    background-color: #544;
+    border-radius: 1px 1px 0 0;
+    position: absolute;
+    top: -105px;
+    left: 33px;
+}
+
+.guitar-sm .guitar-head:before {
+    content: "";
+    height: 20px;
+    width: 14px;
+    border: solid;
+    border-color: #544 transparent transparent transparent;
+    position: absolute;
+    border-width: 8px 3px 0px 3px;
+    top: 20px;
+    left: 0px;
+}
+
+.guitar-sm .guitar-head:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #eec;
+    position: absolute;
+    top: 27px;
+    left: 2px;
+    z-index: 4;
+}
+
+.guitar-sm .guitar-string {
+    position: absolute;
+    z-index: 3;
+}
+
+.guitar-sm .guitar-string .turning{
+    position: absolute;
+    z-index: 4;
+}
+
+.guitar-sm .guitar-string .turning .turning {
+    width: 2px;
+    height: 3px;
+    background-color: #ca0;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .turning .turning:before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color: #db4;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .turning .turning:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #886;
+    border: #db4 1px solid;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .turning .l {
+    border-radius: 50% 0 0 50%;
+    border: #fd6 solid;
+    border-width: 1px 0px 0px 0px;
+}
+
+.guitar-sm .guitar-string .turning .l:before {
+    top: 0px;
+    left: 2px;
+}
+
+.guitar-sm .guitar-string .turning .l:after {
+    top: -1px;
+    left: 5px;
+}
+
+.guitar-sm .guitar-string .turning .r {
+    border-radius: 0 50% 50% 0;
+    border: #fd6 solid;
+    border-width: 1px 0px 0px 0px;
+}
+
+.guitar-sm .guitar-string .turning .r:before {
+    top: 0px;
+    left: -1px;
+}
+
+.guitar-sm .guitar-string .turning .r:after {
+    top: -1px;
+    left: -6px;
+}
+
+.guitar-sm .guitar-string .turning .e {
+    top: -89px;
+    left: 30px;
+}
+
+.guitar-sm .guitar-string .turning .a {
+    top: -94px;
+    left: 30px;
+}
+
+.guitar-sm .guitar-string .turning .d {
+    top: -99px;
+    left: 30px;
+}
+
+.guitar-sm .guitar-string .turning .g {
+    top: -99px;
+    left: 48px;
+}
+
+.guitar-sm .guitar-string .turning .b {
+    top: -94px;
+    left: 48px;
+}
+
+.guitar-sm .guitar-string .turning .e-h {
+    top: -89px;
+    left: 48px;
+}
+
+.guitar-sm .guitar-string .string {
+    top: -38px;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .string .string {
+    width: 1px;
+    height: 140px;
+    background-color: #ba9;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .string .string:before {
+    content: "";
+    width: 1px;
+    background-color: #ba9;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .string .e {
+    left: 35px;
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+}
+
+.guitar-sm .guitar-string .string .e:before {
+    top: -10px;
+    left: 0px;
+    height: 10px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+
+.guitar-sm .guitar-string .string .a {
+    left: 36px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .a:before {
+    top: -16px;
+    left: 1px;
+    height: 16px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .d {
+    left: 38px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .d:before {
+    top: -22px;
+    left: 0px;
+    height: 22px;
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+}
+
+.guitar-sm .guitar-string .string .g {
+    left: 40px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .g:before {
+    top: -22px;
+    left: 1px;
+    height: 22px;
+    transform: rotate(4deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .b {
+    left: 42px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .b:before {
+    top: -16px;
+    left: 0px;
+    height: 16px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .e-h {
+    left: 44px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.guitar-sm .guitar-string .string .e-h:before {
+    top: -11px;
+    left: -1px;
+    height: 11px;
+    transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+}
+
+.guitar-sm .guitar-string .pin .pin {
+    width: 2px;
+    height: 2px;
+    background-color: #eec;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.guitar-sm .guitar-string .pin .e {
+    top: 63px;
+    left: 34px;
+}
+.guitar-sm .guitar-string .pin .a {
+    top: 63px;
+    left: 36px;
+}
+.guitar-sm .guitar-string .pin .d {
+    top: 63px;
+    left: 38px;
+}
+.guitar-sm .guitar-string .pin .g {
+    top: 63px;
+    left: 40px;
+}
+.guitar-sm .guitar-string .pin .b {
+    top: 63px;
+    left: 42px;
+}
+.guitar-sm .guitar-string .pin .e-h {
+    top: 63px;
+    left: 44px;
+}
+
+.guitar-sm .guitar-neck .fret{
+    height: 1px;
+    background-color: #eec;
+    position: absolute;
+    opacity: 0.8;
 }
 
