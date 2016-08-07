@@ -333,7 +333,8 @@ a:focus, a:hover, a:active {
     margin: 0 auto;
     position: relative;
     color: #ccc;
-    line-height: 300%;
+    line-height: 100%;
+    top: 15px;
     font-size: 30px;
     text-align: center;
 }
@@ -366,8 +367,8 @@ a:focus, a:hover, a:active {
 }
 
 .guitar-sm {
-    bottom: 145px;
-    left: 18px;
+    bottom: calc(5% + 121px);
+    left: 34px;
 }
 
 .table-sm {
@@ -394,12 +395,12 @@ a:focus, a:hover, a:active {
 
 .wall {
     width: 100%;
-    height: calc(100% - 56px);
+    height: calc(195% - 30px);
     position: absolute;
-    top: 0px;
+    top: -100%;
     border: solid;
     border-color: #667 #445;
-    border-width: 0px 0px 10px 10px;
+    border-width: 0px 0px 12px 32px;
 }
 
 .guitar-thick {
@@ -410,7 +411,7 @@ a:focus, a:hover, a:active {
 }
 .guitar-thick .guitar-body {
     margin-left: 2px;
-    margin-top: -2px;
+    margin-top: -1px;
 }
 .guitar-thick .guitar-string,
 .guitar-thick .guitar-head:after,
