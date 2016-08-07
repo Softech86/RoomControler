@@ -7,8 +7,11 @@ function startTime() {
     h = checkTime(h);
     m = checkTime(m);
     s = checkTime(s);
-    var greeting = ["更深夜静", "东方既白", "060708", "091011", "121314", "151617", "薄暮冥冥", "月明星稀"];
-    //$('.clock-dig').html(h+":"+m+":"+s);
+    var
+        greeting = ["更深夜静", "东方既白", "060708", "091011", "121314", "151617", "薄暮冥冥", "月明星稀"],
+        greeting_sm = ["Sleep", "Rest", "Morning", "Hello", "Noon", "Afternoon", "Evening", "Night"];
+        //            ["000102", "030405", "060708", "091011", "121314", "151617", "181920", "212223"]
+        //$('.clock-dig').html(h+":"+m+":"+s);
     $('.clock-dig .hour').html(h);
     $('.clock-dig .minute').html(m);
     if (s < 30) {
@@ -30,6 +33,7 @@ function startTime() {
         $(".clock-dig style").html(style);
     }
     $('.greeting').html(greeting[Number.parseInt(h / 3)]);
+    $('.greeting-sm').html(greeting_sm[Number.parseInt(h / 3)]);
 
     //$('.clock-sm').html(h+":"+m);
     $('.clock .minute').css("transform", "rotate(" + 6 * m + "deg)");

@@ -69,7 +69,6 @@
     position: absolute;
     z-index: 1;
     right:5px;
-    top: 142px;
 }
 .notebook-sm .screen:before {
     content: "";
@@ -102,7 +101,7 @@
     background: #f4f5f7;
     border-radius: 1px 1px 8px 8px;
     height: 3px;
-    width: 105px;
+    width: 106px;
     margin: 0 auto;
 }
 .notebook-sm .keyboard:after {
@@ -124,19 +123,40 @@
     z-index: -1;
     border-radius: 100%;
 }
+.notebook-sm .keyboard-top {
+    border: solid;
+    border-width: 0px 11px 3px 11px;
+    border-color: #fff transparent;
+    height: 3px;
+    width: 106px;
+    margin: 0 auto;
+    position: relative;
+}
+.notebook-sm .keyboard-top:before {
+    content: "";
+    border: solid;
+    border-width: 0px 7px 2px 7px;
+    border-color: #ccc transparent;
+    top: 0px;
+    left: -2px;
+    height: 2px;
+    width: 88px;
+    margin: 0 auto;
+    position: absolute;
+}
+
 
 .coffee-sm {
     float: left;
     position: absolute;
     z-index: 1;
     right: 120px;
-    top: 183px;
 }
 
 .coffee-sm .cup {
     width: 14px;
     height: 16px;
-    background-color: #ffe;
+    background-color: #eed;
     margin: 0 auto;
     border-radius: 2px 2px 2px 2px;
 }
@@ -145,7 +165,7 @@
     content: "";
     width: 6px;
     height: 16px;
-    background-color: #ffe;
+    background-color: #eed;
     margin: 0 auto;
     border-radius: 0 0 0 100%;
     position: absolute;
@@ -156,11 +176,22 @@
     content: "";
     width: 6px;
     height: 16px;
-    background-color: #ffe;
+    background-color: #eed;
     margin: 0 auto;
     border-radius: 0 0 100% 0;
     position: absolute;
     right: 3px;
+}
+
+.coffee-sm .top {
+    width: 22px;
+    top: -1px;
+    left: 3px;
+    height: 2px;
+    background-color: #ddc;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
 }
 
 .coffee-sm .ear {
@@ -171,7 +202,7 @@
     top: 3px;
     position: absolute;
     z-index: -1;
-    background-color: #ffe;
+    background-color: #eed;
 
 
     border-radius: 100%;
@@ -197,7 +228,7 @@
     height: 8px;
     top: 3px;
     right: 0px;
-    background-color: #ffe;
+    background-color: #eed;
     margin: 0 auto;
     border-radius: 0 0 100% 0;
     position: absolute;
@@ -205,21 +236,30 @@
 
 .coffee-sm .plate {
     width: 28px;
-    height: 2px;
-    border-radius: 10% 10% 50% 50%;
+    height: 3px;
+    border-radius: 30% 30% 50% 50%;
     background-color: #fff;
-    margin: 0 auto;
+    margin: -1px auto;
 }
-
+.coffee-sm .plate:before {
+    content: "";
+    position: absolute;
+    background-color: #eed;
+    height: 3px;
+    width: 12px;
+    margin: -1px 0px 0px 8px;
+    z-index: 0;
+    border-radius: 40%;
+}
 .coffee-sm .plate:after {
     content: "";
     position: absolute;
     background: rgba(0,0,0,0.2);
-    height: 2px;
+    height: 3px;
     width: 34px;
     margin: 1px 0px 0px -3px;
     z-index: -1;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .coffee-sm .steam {
@@ -283,9 +323,6 @@
 
 .guitar-sm {
     position: absolute;
-    top: 118px;
-    left: 12px;
-    opacity: 0.9;
     transform: rotate(-23deg);
     -webkit-transform: rotate(-23deg);
 }
@@ -663,7 +700,7 @@
     left: 1px;
     height: 22px;
     transform: rotate(4deg);
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(4deg);
 }
 
 .guitar-sm .guitar-string .string .b {
@@ -734,3 +771,23 @@
     opacity: 0.8;
 }
 
+.table-sm {
+    height: 10px;
+    width: 75%;
+    background-color: #655;
+    border-radius: 1px;
+    right: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.table-sm:before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    bottom: 10px;
+    border: solid;
+    border-width: 0px 0px 10px 30px;
+    border-color: transparent transparent #988 transparent;
+    position: absolute;
+}

@@ -4,6 +4,19 @@ function init(title) {
         setPage();
     });
 
+    var f = function() {
+        var bgc = $(".current").css("background-color");
+        $("body").css("background-color", bgc);
+    }
+    var callback = {
+        1: f,
+        2: f,
+        3: f,
+        4: f,
+        5: f
+    };
+    var pageSlider = PageSlider.case({callback: callback});
+
     setDebug(title);
     setMoreBtn();
     setClock();
@@ -12,7 +25,7 @@ function init(title) {
 
 function setPage() {
     console.log("before" + $(".list-group").css("margin-bottom"));
-    //TODO: rewrite! 太差了! 重构!
+
     $(".city").height(parseInt($("body").width() / 2800 * 991));
 
     console.log($(".city").offset().top);
@@ -63,8 +76,18 @@ function setMoreBtn() {
         $(".coffee-sm").toggleClass("show-right");
         */
 
-        $("#list").slideToggle(500, setPage);
-        $("#display").slideToggle(400);
+        /*
+        $("#list").toggle(500, function() {
+            setPage();
+            if ($("#list").css("display") == "none")
+                $("#display").fadeIn(300);
+        });
+        $("#display").fadeToogle(500);*/
+
+        $("#list").fadeToggle(500, setPage);
+        $("#display").fadeToggle(500);
+        $("#copyright").fadeToggle(500);
+
     });
 
     $("body").click(function() {
