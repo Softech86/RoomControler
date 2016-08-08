@@ -29,15 +29,30 @@ body {
 }
 
 .title {
-    color: #ccc;
     width: 70%;
+    height: 50px;
     text-align: center;
-    font-size: 28px;
     margin-bottom: 0px;
-    position: absolute;
+    position: relative;
     float: left;
     top: 0px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.title .title {
+    color: #ccc;
+    font-size: 28px;
+    width: 100%;
+    height: 30px;
+    position: relative;
     line-height: 50px;
+}
+.title .subtitle {
+    color: #888;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
 }
 
 .moreBtn {
@@ -228,22 +243,17 @@ body {
     color: #ddd;
     font-size: 18px;
     border-color: transparent;
-
     transition: all 0.3s ease-in-out;
 }
 
 .list-group-item div {
     float: left;
-    background-color: #fff;
-    background: linear-gradient(to right, #ddf 0%,#000 100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    background: linear-gradient(to right, #dde 0%, #000 100%);
     z-index: -1;
     opacity: 0.5;
 
+    border-radius: 24px 0px 0px 23px;
+    position: absolute;
     transition: all 0.3s ease-in-out;
 }
 
@@ -337,6 +347,8 @@ a:focus, a:hover, a:active {
     top: 15px;
     font-size: 30px;
     text-align: center;
+    text-shadow: 0px 0px 5px #334;
+    z-index: 1;
 }
 
 .btn-sm {
@@ -356,14 +368,6 @@ a:focus, a:hover, a:active {
     position: absolute;
     font-size: 12px;
     line-height: 100%;
-}
-
-#watching {
-    width: 100%;
-    /*height: 205px;
-    position: relative;*/
-    height: 100%;
-    background-color: #000;
 }
 
 .guitar-sm {
@@ -392,17 +396,6 @@ a:focus, a:hover, a:active {
     position: relative;
 }
 
-
-.wall {
-    width: 100%;
-    height: calc(195% - 30px);
-    position: absolute;
-    top: -100%;
-    border: solid;
-    border-color: #667 #445;
-    border-width: 0px 0px 12px 32px;
-}
-
 .guitar-thick {
     margin-left: 1px;
     margin-bottom: 1px;
@@ -419,4 +412,67 @@ a:focus, a:hover, a:active {
 .guitar-thick .guitar-body .bottom:before
 {
     display: none;
+}
+
+
+.wall {
+    width: 100%;
+    height: calc(95% - 30px);
+    position: absolute;
+    border: solid;
+    border-width: 0px 0px 12px 32px;
+}
+
+.wall-1 {
+    height: calc(195% - 30px);
+    top: -100%;
+    border-color: #667 #445;
+}
+
+.wall-2 {
+    height: calc(95% - 30px);
+    top: 0%;
+    border-color: #555 #333;
+}
+
+.wall-3 {
+    height: calc(95% - 30px);
+    top: 0%;
+    border-color: #568 #346;
+}
+
+.wall-4 {
+    height: calc(95% - 30px);
+    top: 0%;
+    border-color: #387 #165;
+}
+
+.wall-5 {
+    height: calc(95% - 30px);
+    top: 0%;
+    border-color: #d66 #b44;
+}
+
+#watching {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+#control {
+    width: 100%;
+    height: 100%;
+    background-color: #235;
+}
+
+#message {
+    width: 100%;
+    height: 100%;
+    background-color: #054;
+}
+
+#shedule {
+    width: 100%;
+    height: 100%;
+    background-color: #a33;
 }

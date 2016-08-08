@@ -4,16 +4,32 @@ function init(title) {
         setPage();
     });
 
-    var f = function() {
-        var bgc = $(".current").css("background-color");
-        $("body").css("background-color", bgc);
+    var f = function(title) {
+        if (!title)
+            title = "MyDorm";
+        return function() {
+            var bgc = $(".current").css("background-color");
+            $("body").css("background-color", bgc);
+
+            if (title == "MyDorm") {
+                $(".title .title").css("line-height", "50px");
+                $(".title .subtitle").fadeOut(300);
+            }
+            else {
+                var changeSbt = function() {
+                    $(".title .subtitle").html(title);
+                }
+                $(".title .title").css("line-height", "35px");
+                $(".title .subtitle").fadeOut(100, changeSbt).fadeIn(300);
+            }
+        }
     }
     var callback = {
-        1: f,
-        2: f,
-        3: f,
-        4: f,
-        5: f
+        1: f("MyDorm"),
+        2: f("Watching"),
+        3: f("Control"),
+        4: f("Message"),
+        5: f("Schedule")
     };
     var pageSlider = PageSlider.case({callback: callback});
 
@@ -34,8 +50,15 @@ function setPage() {
     var
         h = $(window).height() - $(".city").offset().top - $(".city").height() + parseFloat($(".list-group").css("margin-bottom")),
         min = parseInt($(".city").height() * 0.2);
-    $(".list-group").css("margin-bottom", (h >= min ? h : min) + "px");
-
+    if (h >= min) {
+        $(".city").css("display", "block");
+        $(".list-group").css("margin-bottom", h + "px");
+    }
+    else {
+        $(".city").css("display", "none");
+        var hAve = $(window).height() / 12 - 17.6;
+        $(".list-group-item").css("padding", hAve >= 10 ? 10 : hAve + "px 15px");
+    }
     console.log("after" + $(".list-group").css("margin-bottom"));
 }
 
@@ -47,16 +70,22 @@ function listClicked() {
     thisListItem.css("color", "#fff");
     thisListItem.prev().css("background-color", "#fff");
     thisListItem.prev().css("width", "100%");
-    //thisListItem.parent().css("background-color", "#555");
-    //thisListItem.parent().css("background", "linear-gradient(to right, #000 0%,#fff 100%)")
+    thisListItem.prev().css("height", "100%");
+    thisListItem.prev().css("top", "0px");
+    thisListItem.prev().css("left", "0px");
+
+};
+
+function bodyClicked() {
+    $(".list-group-item a").css("opacity", "1.0");
+    $(".list-group-item div").css("width", "0%");
+    //$(".list-group-item div").css("height", "0%");
+    //$(".list-group-item div").css("top", "23px");
+    $(".list-group-item div").css("left", "12px");
+
 };
 
 function setMoreBtn() {
-    /*$(".moreBtn").click(function() {
-        $("#page-l").animate({
-            width: "25px"
-        }, 500);
-    });*/
     $(".moreBtn").click(function() {
         $("#page-l").toggleClass("page-rotate").toggleClass("page-l-rotate");
         $("#page-m").toggleClass("page-rotate").toggleClass("page-m-rotate");
@@ -65,50 +94,13 @@ function setMoreBtn() {
         $("body").toggleClass("darkBg");
         $("#topbar").toggleClass("darkBg");
 
-        /*
-        $(".guitar-sm").toggleClass("hide-left");
-        $(".guitar-sm").toggleClass("show-left");
-
-        $(".notebook-sm").toggleClass("hide-right");
-        $(".notebook-sm").toggleClass("show-right");
-
-        $(".coffee-sm").toggleClass("hide-right");
-        $(".coffee-sm").toggleClass("show-right");
-        */
-
-        /*
-        $("#list").toggle(500, function() {
-            setPage();
-            if ($("#list").css("display") == "none")
-                $("#display").fadeIn(300);
-        });
-        $("#display").fadeToogle(500);*/
-
         $("#list").fadeToggle(500, setPage);
         $("#display").fadeToggle(500);
         $("#copyright").fadeToggle(500);
 
     });
 
-    $("body").click(function() {
-        $(".list-group-item a").css("opacity", "1.0");
-        //$(".list-group-item").css("border-color", "transparent");
-        //$(".list-group-item").css("background-color", "transparent");
-        //$(".list-group-item").css("background", "none");
-        $(".list-group-item div").css("width", "0");
-        //$(".list-group-item div").css("background-color", "transparent");
-    });
-
-    /*listClicked = () => {
-        $(".list-group-item a").css("opacity", "0.3");
-        $(".list-group-item").css("border-color", "transparent");
-        thisListItem.css("opacity", "1.0");
-        thisListItem.css("color", "#fff");
-        thisListItem.prev().css("background-color", "#fff");
-        thisListItem.prev().css("width", "100%");
-        //thisListItem.parent().css("background-color", "#555");
-        //thisListItem.parent().css("background", "linear-gradient(to right, #000 0%,#fff 100%)")
-    };*/
+    $("body").click(bodyClicked);
 
     $(".list-group-item a").click(function() {
         thisListItem = $(this);

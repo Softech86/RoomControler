@@ -9,7 +9,8 @@
         </span>
     </div>
     <span class="title">
-        MyDorm
+        <div class="title">MyDorm</div>
+        <div class="subtitle"></div>
     </span>
     <div class = "navbar-brand" href = "#" style="float: right;width: 15%; margin-right: 0px;">
         <div class = "clock" style="display: none">
@@ -41,7 +42,7 @@
 <div id="display">
 
     <div id="welcome" class="section sec1">
-        <div class="wall"></div>
+        <div class="wall wall-1"></div>
 
         <div class="stuff-on-top">
 
@@ -172,24 +173,24 @@
             </div>
         </div>
 
-        <div class="tall-stool"></div>
-
-        <div class="short-stool"></div>
-
-        <!--div style="width: 100%; text-align: center;">
-            <button type="button" class="btn btn-sm btn-default">
-                Sign in
-            </button>
-        </div-->
     </div>
 
     <div id="watching" class="section sec2">
-
+        <div class="wall wall-2"></div>
     </div>
 
-    <% for (var i = 3; i < 6.0; ++i) { %>
-    <div class="section sec<%= i %>" style="background: #<%= i * 3 - 6 %>00"></div>
-    <% } %>
+    <div id="control" class="section sec3">
+        <div class="wall wall-3"></div>
+    </div>
+
+    <div id="message" class="section sec4">
+        <div class="wall wall-4"></div>
+    </div>
+
+    <div id="shedule" class="section sec5">
+        <div class="wall wall-5"></div>
+    </div>
+
 </div>
 
 <% include footer.ejs %>
