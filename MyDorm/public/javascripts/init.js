@@ -8,17 +8,21 @@ function init(title) {
         if (!title)
             title = "MyDorm";
         return function() {
+            var changeSbt = function() {
+                $(".title .subtitle").html(title);
+            };
+
+            if ($(".title .subtitle").html() == title) {
+                return;
+            }
+
             var bgc = $(".current").css("background-color");
             $("body").css("background-color", bgc);
-
             if (title == "MyDorm") {
                 $(".title .title").css("line-height", "50px");
-                $(".title .subtitle").fadeOut(300);
+                $(".title .subtitle").fadeOut(300, changeSbt);
             }
             else {
-                var changeSbt = function() {
-                    $(".title .subtitle").html(title);
-                }
                 $(".title .title").css("line-height", "35px");
                 $(".title .subtitle").fadeOut(100, changeSbt).fadeIn(300);
             }
@@ -37,6 +41,8 @@ function init(title) {
     setMoreBtn();
     setClock();
     typeOnNotebook();
+
+    pageSlider.go(2);
 }
 
 function setPage() {
