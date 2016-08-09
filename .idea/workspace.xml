@@ -2,589 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a702f9a-f974-4e58-bc4e-b898267262c8" name="Default" comment="手机页面加入,响应式布局优化">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/lib/read.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/lib/types/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/lib/types/raw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/lib/types/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/lib/types/urlencoded.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/bytes/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/bytes/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/bytes/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/bytes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/bytes/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/content-type/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/content-type/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/content-type/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/content-type/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/content-type/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/lib/browser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/lib/compat/buffer-concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/lib/compat/callsite-tostring.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/lib/compat/event-listener-count.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/lib/compat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/depd/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/inherits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/inherits_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/setprototypeof/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/setprototypeof/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/setprototypeof/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/setprototypeof/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/codes.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/http-errors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/Changelog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/iconv-lite/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/on-finished/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/.eslintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/.eslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/.jscs.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/dist/qs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/lib/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/lib/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/qs/test/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/raw-body/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/media-typer/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/media-typer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/media-typer/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/media-typer/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/media-typer/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/node_modules/type-is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/body-parser/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie-signature/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie-signature/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie-signature/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie-signature/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie-signature/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/node_modules/cookie/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/cookie-parser/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/node_modules/ms/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/debug/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/Jakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/ejs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/lib/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/backslash.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/backslash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/comments.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/consecutive-tags.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/consecutive-tags.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/double-quote.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/double-quote.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/error.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/error.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/fail.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/hello-world.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include-abspath.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include-simple.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include.css.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include.css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_cache.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_cache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor.css.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor.css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor_cache.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/include_preprocessor_cache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/includes/bom.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/includes/menu-item.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/includes/menu/item.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/literal.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/literal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/menu.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/menu_preprocessor.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/menu_preprocessor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/menu_var.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/messed.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/messed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/newlines.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/newlines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/newlines.mixed.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/newlines.mixed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/no.newlines.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/no.newlines.error.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/no.newlines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/no.semicolons.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/no.semicolons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/para.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/pet.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/rmWhitespace.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/rmWhitespace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/single-quote.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/single-quote.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/space-and-tab-slurp.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/space-and-tab-slurp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/user-no-with.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/user.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/fixtures/with-context.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/ejs/test/mocha.opts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/express.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/middleware/init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/middleware/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/request.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/router/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/router/layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/router/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/lib/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/mime-types/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/charset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/encoding.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/language.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/mediaType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/node_modules/negotiator/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/accepts/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/array-flatten/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/array-flatten/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/array-flatten/array-flatten.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/array-flatten/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-disposition/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-disposition/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-disposition/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-disposition/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-disposition/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-type/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-type/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-type/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-type/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/content-type/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie-signature/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie-signature/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie-signature/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie-signature/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie-signature/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/cookie/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/lib/browser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/lib/compat/buffer-concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/lib/compat/callsite-tostring.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/lib/compat/event-listener-count.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/lib/compat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/depd/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/escape-html/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/escape-html/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/escape-html/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/escape-html/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/etag/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/etag/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/etag/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/etag/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/etag/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/node_modules/unpipe/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/node_modules/unpipe/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/node_modules/unpipe/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/node_modules/unpipe/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/node_modules/unpipe/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/finalhandler/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/fresh/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/fresh/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/fresh/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/fresh/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/fresh/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/merge-descriptors/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/merge-descriptors/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/merge-descriptors/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/merge-descriptors/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/merge-descriptors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/methods/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/methods/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/methods/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/methods/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/methods/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/node_modules/ee-first/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/node_modules/ee-first/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/node_modules/ee-first/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/node_modules/ee-first/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/on-finished/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/parseurl/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/parseurl/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/parseurl/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/parseurl/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/parseurl/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/path-to-regexp/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/path-to-regexp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/path-to-regexp/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/path-to-regexp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/path-to-regexp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/Cakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/ipaddr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/lib/ipaddr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/src/ipaddr.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/test/ipaddr.test.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/proxy-addr/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/.eslintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/lib/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/lib/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/qs/test/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/range-parser/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/range-parser/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/range-parser/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/range-parser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/range-parser/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/.bin/mime" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/destroy/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/destroy/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/destroy/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/destroy/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/inherits/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/http-errors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/build/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/cli.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/mime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/mime/types.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/ms/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/statuses/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/statuses/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/statuses/codes.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/statuses/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/node_modules/statuses/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/send/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/.bin/mime" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/destroy/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/destroy/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/destroy/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/destroy/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/node_modules/inherits/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/http-errors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/build/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/cli.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/mime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/types.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/ms/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/statuses/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/statuses/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/statuses/codes.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/statuses/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/statuses/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/node_modules/send/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/serve-static/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/media-typer/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/media-typer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/media-typer/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/media-typer/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/media-typer/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/node_modules/mime-types/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/type-is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/utils-merge/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/utils-merge/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/utils-merge/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/utils-merge/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/utils-merge/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/vary/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/vary/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/vary/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/vary/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/node_modules/vary/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/express/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/basic-auth/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/basic-auth/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/basic-auth/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/basic-auth/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/basic-auth/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/lib/browser/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/lib/compat/buffer-concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/lib/compat/callsite-tostring.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/lib/compat/event-listener-count.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/lib/compat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/depd/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-finished/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-headers/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-headers/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-headers/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-headers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/node_modules/on-headers/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/morgan/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/etag/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/etag/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/etag/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/etag/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/etag/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/fresh/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/fresh/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/fresh/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/fresh/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/fresh/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/ms/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/parseurl/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/parseurl/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/parseurl/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/parseurl/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/node_modules/parseurl/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyDorm/node_modules/serve-favicon/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDorm/public/javascripts/init.js" afterPath="$PROJECT_DIR$/MyDorm/public/javascripts/init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css" afterPath="$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDorm/views/index_m.ejs" afterPath="$PROJECT_DIR$/MyDorm/views/index_m.ejs" />
@@ -612,56 +30,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index_m.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/MyDorm/views/index_m.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
-                  <folding>
-                    <element signature="n#div#0;n#div#1;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header_m.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="463" column="16" selection-start-line="463" selection-start-column="16" selection-end-line="463" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pageSlider.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="init.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MyDorm/public/javascripts/init.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+                <state relative-caret-position="60">
+                  <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pageSlider.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2528">
-                  <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -670,16 +44,26 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index_m.ejs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index_m.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MyDorm/views/index_m.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+                <state relative-caret-position="48">
+                  <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
                   <folding>
                     <element signature="n#div#1;n#div#0;n#div#1;n#!!top" expanded="false" />
                     <element signature="n#div#2;n#div#0;n#div#1;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#0;n#div#1;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header_m.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="461" column="15" selection-start-line="461" selection-start-column="15" selection-end-line="461" selection-end-column="15" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -725,9 +109,9 @@
         <option value="$PROJECT_DIR$/MyDorm/public/stylesheets/image.css" />
         <option value="$PROJECT_DIR$/MyDorm/public/javascripts/time.js" />
         <option value="$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.css" />
+        <option value="$PROJECT_DIR$/MyDorm/views/index_m.ejs" />
         <option value="$PROJECT_DIR$/MyDorm/public/javascripts/init.js" />
         <option value="$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css" />
-        <option value="$PROJECT_DIR$/MyDorm/views/index_m.ejs" />
       </list>
     </option>
   </component>
@@ -1072,7 +456,7 @@
       <workItem from="1470537931192" duration="9352000" />
       <workItem from="1470619758588" duration="30000" />
       <workItem from="1470642328583" duration="8923000" />
-      <workItem from="1470675213831" duration="8584000" />
+      <workItem from="1470675213831" duration="14240000" />
     </task>
     <task id="LOCAL-00001" summary="1.增加icon&#10;2.修改网站模块逻辑">
       <created>1469550910120</created>
@@ -1190,7 +574,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160259000" />
+    <option name="totallyTimeSpent" value="165915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1355,14 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Res/icon.psd">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1409,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyDorm/public/javascripts/time.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1440,54 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/views/header_m.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/image.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11595">
-          <caret line="791" column="23" selection-start-line="791" selection-start-column="23" selection-end-line="791" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/public/javascripts/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2528">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1496,23 +817,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css">
+    <entry file="file://$PROJECT_DIR$/MyDorm/views/header_m.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="463" column="16" selection-start-line="463" selection-start-column="16" selection-end-line="463" selection-end-column="16" />
+        <state relative-caret-position="148">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/views/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/public/pageSlider/pageSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/image.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="791" column="23" selection-start-line="791" selection-start-column="23" selection-end-line="791" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyDorm/views/index_m.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+        <state relative-caret-position="48">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/public/javascripts/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyDorm/public/stylesheets/header_m.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="461" column="15" selection-start-line="461" selection-start-column="15" selection-end-line="461" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

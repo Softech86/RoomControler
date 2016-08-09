@@ -26,6 +26,16 @@ function init(title) {
                 $(".title .title").css("line-height", "35px");
                 $(".title .subtitle").fadeOut(100, changeSbt).fadeIn(300);
             }
+
+            //watching 显示屏特效
+            console.log(title);
+
+            if (title == "Watching") {
+                watchingPageAnimate();
+            }
+            else {
+                watchingPageReset();
+            }
         }
     }
     var callback = {
@@ -41,9 +51,51 @@ function init(title) {
     setMoreBtn();
     setClock();
     typeOnNotebook();
+    watchingPageReset();
 
     pageSlider.go(2);
 }
+
+function watchingPageReset() {
+    $(".watching-img").css("height", "4px");
+    $(".watching-img").css("width", "4px");
+    if ($(window).height() > $(window).width()) {
+        $(".watching-img").css("top", 75 + 0.375 * $(window).width() - 9 + "px");
+        $(".watching-img").css("left", 12 + 0.5 * $(window).width() - 12 + "px");
+    }
+    else {
+        $(".watching-img").css("top", 56 + 0.5 * $(window).height() - 53 + "px");
+        $(".watching-img").css("left", 24 + 0.5 * $(window).height() / 0.75 - 53 / 0.75 + "px");
+    }
+}
+function watchingPageAnimate() {
+    if ($(window).height() > $(window).width()) {
+        $(".watching-img").css("width", "calc(100% - 24px)");
+        $(".watching-img").css("left", "12px");
+        setTimeout('$(".watching-img").css("height", getPicHeight())', 400);
+        setTimeout('$(".watching-img").css("top", "75px")', 400);
+
+    }
+    else {
+        $(".watching-img").css("height", "calc(100% - 106px)");
+        $(".watching-img").css("top", "56px");
+        setTimeout('$(".watching-img").css("width", getPicWidth())', 400);
+        setTimeout('$(".watching-img").css("left", "24px")', 400);
+
+    }
+
+    //setTimeout('$(".watching-img").css("height", getPicHeight())', 1000);
+    //setTimeout('$(".watching-img").css("top", "calc(25% - 24px)")', 1000);
+
+}
+function getPicHeight() {
+    return parseFloat($(".watching-img").css("width")) * 0.75;
+}
+function getPicWidth() {
+    return parseFloat($(".watching-img").css("height")) / 0.75;
+}
+
+
 
 function setPage() {
     console.log("before" + $(".list-group").css("margin-bottom"));

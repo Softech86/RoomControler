@@ -460,11 +460,7 @@ a:focus, a:hover, a:active {
 }
 
 .watching-img {
-    width: calc(100% - 24px);
-    height: 0px;
-    right: 12px;
     position: absolute;
-    top: 60px;
     border: solid 2px #eef;
     border-radius: 5px;
 
