@@ -791,3 +791,52 @@
     border-color: transparent transparent #988 transparent;
     position: absolute;
 }
+
+.lazer path {
+    opacity:0.5;
+    fill:#9bd;
+    stroke:#bdf;
+    stroke-width: 3px;
+    stroke-miterlimit: 0;
+    stroke-dasharray: 1000 1000;
+    stroke-dashoffset: 0.00;
+}
+
+.lazer {
+    width: 320px;
+    top: 10px;
+    left: -8px;
+    position: absolute;
+    display: none;
+    stroke-linejoin: round;
+}
+
+.text-update {
+    position: absolute;
+    bottom: 30%;
+    width: 40px;
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 0;
+    stroke-linejoin: bevel;
+}
+.text-u {
+    right: 200px;
+}
+.text-p {
+    right: 160px;
+}
+.text-d {
+    right: 128px;
+}
+.text-a {
+    right: 90px;
+}
+.text-t {
+    right: 50px;
+}
+.text-e {
+    right: 20px;
+}

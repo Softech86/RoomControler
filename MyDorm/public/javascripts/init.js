@@ -1,3 +1,9 @@
+//interval function
+var
+    lazerAdjust,
+    typeAni = null;
+
+
 function init(title) {
     setPage();
     $(window).resize(function() {
@@ -21,17 +27,30 @@ function init(title) {
             if (title == "MyDorm") {
                 $(".title .title").css("line-height", "50px");
                 $(".title .subtitle").fadeOut(300, changeSbt);
+
+                if (!typeAni) {
+                    if (typingMutex) {
+                        typeOnNotebook();
+                    }
+                    typeAni = setInterval("typeOnNotebook()", 10000);
+                }
             }
             else {
                 $(".title .title").css("line-height", "35px");
                 $(".title .subtitle").fadeOut(100, changeSbt).fadeIn(300);
+
+                window.clearInterval(typeAni);
+                typeAni = null;
+                typingMutex = true;
             }
 
             //watching 显示屏特效
             console.log(title);
 
             if (title == "Watching") {
-                watchingPageAnimate();
+                $(".lazer").fadeIn(watchingPageAnimate);
+                $(".watching-img").fadeIn();
+                watchingReload();
             }
             else {
                 watchingPageReset();
@@ -50,60 +69,19 @@ function init(title) {
     setDebug(title);
     setMoreBtn();
     setClock();
-    typeOnNotebook();
     watchingPageReset();
-
-    pageSlider.go(2);
+    typeOnNotebook();
+    //pageSlider.go(2);
 }
-
-function watchingPageReset() {
-    $(".watching-img").css("height", "4px");
-    $(".watching-img").css("width", "4px");
-    if ($(window).height() > $(window).width()) {
-        $(".watching-img").css("top", 75 + 0.375 * $(window).width() - 9 + "px");
-        $(".watching-img").css("left", 12 + 0.5 * $(window).width() - 12 + "px");
-    }
-    else {
-        $(".watching-img").css("top", 56 + 0.5 * $(window).height() - 53 + "px");
-        $(".watching-img").css("left", 24 + 0.5 * $(window).height() / 0.75 - 53 / 0.75 + "px");
-    }
-}
-function watchingPageAnimate() {
-    if ($(window).height() > $(window).width()) {
-        $(".watching-img").css("width", "calc(100% - 24px)");
-        $(".watching-img").css("left", "12px");
-        setTimeout('$(".watching-img").css("height", getPicHeight())', 400);
-        setTimeout('$(".watching-img").css("top", "75px")', 400);
-
-    }
-    else {
-        $(".watching-img").css("height", "calc(100% - 106px)");
-        $(".watching-img").css("top", "56px");
-        setTimeout('$(".watching-img").css("width", getPicWidth())', 400);
-        setTimeout('$(".watching-img").css("left", "24px")', 400);
-
-    }
-
-    //setTimeout('$(".watching-img").css("height", getPicHeight())', 1000);
-    //setTimeout('$(".watching-img").css("top", "calc(25% - 24px)")', 1000);
-
-}
-function getPicHeight() {
-    return parseFloat($(".watching-img").css("width")) * 0.75;
-}
-function getPicWidth() {
-    return parseFloat($(".watching-img").css("height")) / 0.75;
-}
-
 
 
 function setPage() {
-    console.log("before" + $(".list-group").css("margin-bottom"));
+    //console.log("before" + $(".list-group").css("margin-bottom"));
 
     $(".city").height(parseInt($("body").width() / 2800 * 991));
 
-    console.log($(".city").offset().top);
-    console.log($(".city").height());
+    //console.log($(".city").offset().top);
+    //console.log($(".city").height());
 
     var
         h = $(window).height() - $(".city").offset().top - $(".city").height() + parseFloat($(".list-group").css("margin-bottom")),
@@ -117,7 +95,7 @@ function setPage() {
         var hAve = $(window).height() / 12 - 17.6;
         $(".list-group-item").css("padding", hAve >= 10 ? 10 : hAve + "px 15px");
     }
-    console.log("after" + $(".list-group").css("margin-bottom"));
+    //console.log("after" + $(".list-group").css("margin-bottom"));
 }
 
 var thisListItem;
@@ -227,6 +205,8 @@ function rollText(delay) {
     setTimeout("l1 = l2; l2 = l3; l3 = ''; fresh();", adder);
 }
 
+var typingMutex = false;
+
 function typeOnNotebook() {
     var cmds = [
         "brew install",
@@ -235,6 +215,7 @@ function typeOnNotebook() {
     ];
     console.log(adder);
     adder = 0;
+    typingMutex = true;
 
     appendText("l1", "", 0, 0);
     appendText("l1", "brew install", 100, 500);
@@ -251,5 +232,97 @@ function typeOnNotebook() {
     clrscr(500);
     appendText("l1", "$ ", 5, 0);
 
-    setTimeout("typeOnNotebook()", 10000);
+    setTimeout("typingMutex = false;", adder);
+}
+
+function watchingPageReset() {
+    lazerAdjust = setInterval("updateLazer()", 10);
+    setTimeout("window.clearInterval(lazerAdjust)", 400);
+    setTimeout('$(".lazer").fadeOut();', 300);
+    setTimeout('$(".watching-img").fadeOut();', 300);
+
+    $(".watching-img").css("height", "4px");
+    $(".watching-img").css("width", "4px");
+    if ($(window).height() > $(window).width()) {
+        $(".watching-img").css("top", 75 + 0.375 * $(window).width() - 9 + "px");
+        $(".watching-img").css("left", 12 + 0.5 * $(window).width() - 12 + "px");
+    }
+    else {
+        $(".watching-img").css("top", 56 + 0.5 * $(window).height() - 53 + "px");
+        $(".watching-img").css("left", 24 + 0.5 * $(window).height() / 0.75 - 53 / 0.75 + "px");
+    }
+}
+function watchingPageAnimate() {
+
+    lazerAdjust = setInterval("updateLazer()", 40);
+    setTimeout("window.clearInterval(lazerAdjust)", 400);
+
+    $(".watching-img").css("display", "block");
+    $(".lazer").css("display", "block");
+
+    if ($(window).height() > $(window).width()) {
+        $(".watching-img").css("width", "calc(100% - 24px)");
+        $(".watching-img").css("left", "12px");
+        setTimeout('$(".watching-img").css("height", getPicHeight())', 400);
+        setTimeout('$(".watching-img").css("top", "75px")', 400);
+
+    }
+    else {
+        $(".watching-img").css("height", "calc(100% - 106px)");
+        $(".watching-img").css("top", "56px");
+        setTimeout('$(".watching-img").css("width", getPicWidth())', 400);
+        setTimeout('$(".watching-img").css("left", "24px")', 400);
+    }
+
+    //setTimeout('$(".watching-img").css("height", getPicHeight())', 1000);
+    //setTimeout('$(".watching-img").css("top", "calc(25% - 24px)")', 1000);
+}
+function getPicHeight() {
+    return parseFloat($(".watching-img").css("width")) * 0.75;
+}
+function getPicWidth() {
+    return parseFloat($(".watching-img").css("height")) / 0.75;
+}
+
+function updateLazer() {
+    setLazer(
+        parseFloat($('.watching-img').css("left")) - 32,
+        parseFloat($('.watching-img').css("top")) - 50,
+        parseFloat($('.watching-img').css("width")),
+        parseFloat($('.watching-img').css("height"))
+    );
+}
+
+function setLazer(x, y, w, h) {
+    "use strict";
+    var
+        dR = "M0,0L" + (x + w) + "," + y + "L" + (x + w) + "," + (y + h) + "Z",
+        dB = "M0,0L" + x + "," + (y + h) + "L" + (x + w) + "," + (y + h) + "Z",
+        dL = "M0,0L" + x + "," + y + "L" + x + "," + (y + h) + "Z",
+        dT = "M0,0L" + x + "," + y + "L" + (x + w) + "," + y + "Z";
+    $(".lazer-right").attr('d', dR);
+    $(".lazer-bottom").attr('d', dB);
+    $(".lazer-left").attr('d', dL);
+    $(".lazer-top").attr('d', dT);
+}
+
+function loadWatchingText() {
+    $(".text-update").css("stroke-dashoffset", "250");
+    $(".text-update")
+        .animate({strokeDashoffset: "0"}, 4000)
+        .delay(1000)
+        .animate({strokeDashoffset: "-250"}, 1000)
+    ;
+}
+
+function watchingReload() {
+    $.ajax({
+        url: "/currentWatchingImgLocation",
+        success: function(data) {
+            $(".watching-img").attr("src", data);
+            loadWatchingText();
+            if ($(".subtitle").html() == "Watching")
+                setTimeout("watchingReload()", 7000);
+        }
+    });
 }
