@@ -792,7 +792,7 @@
     position: absolute;
 }
 
-.lazer path {
+.laser path {
     opacity:0.5;
     fill:#9bd;
     stroke:#bdf;
@@ -802,7 +802,7 @@
     stroke-dashoffset: 0.00;
 }
 
-.lazer {
+.laser {
     width: 320px;
     top: 10px;
     left: -8px;
@@ -813,30 +813,67 @@
 
 .text-update {
     position: absolute;
-    bottom: 30%;
-    width: 40px;
+    bottom: 5px;
+    width: 19px;
     fill: transparent;
-    stroke: #fff;
-    stroke-width: 2;
+    stroke: #ccc;
+    stroke-width: 3px;
     stroke-dasharray: 250;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 250;
     stroke-linejoin: bevel;
 }
 .text-u {
-    right: 200px;
+    right: calc(182px - 5 * 20px);
 }
 .text-p {
-    right: 160px;
+    right: calc(144px - 4 * 20px);
 }
 .text-d {
-    right: 128px;
+    right: calc(110px - 3 * 20px);
 }
 .text-a {
-    right: 90px;
+    right: calc(73px - 2 * 20px);
 }
 .text-t {
-    right: 50px;
+    right: calc(34px - 1 * 20px);
 }
 .text-e {
-    right: 20px;
+    right: calc(2px - 0 * 20px);
+}
+
+.watching-text {
+    position: absolute;
+    left: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #ccc;
+    float: left;
+}
+
+.watching-time {
+    float: right;
+    font-style: italic;
+    left: -5px;
+    position: relative;
+}
+
+.watching-tip {
+    position: absolute;
+    right: 0px;
+    margin-top: 60px;
+    width: 240px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 2px 0 0 2px;
+    opacity: 0.9;
+}
+.watching-tip:before {
+    content: "";
+    width: 3px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background-color: #387;
 }

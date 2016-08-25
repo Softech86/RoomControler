@@ -1,6 +1,6 @@
 //interval function
 var
-    lazerAdjust,
+    laserAdjust,
     typeAni = null;
 
 
@@ -48,15 +48,14 @@ function init(title) {
             console.log(title);
 
             if (title == "Watching") {
-                $(".lazer").fadeIn(watchingPageAnimate);
                 $(".watching-img").fadeIn();
                 watchingReload();
             }
             else {
-                watchingPageReset();
+                $(".watching-img").fadeOut();
             }
         }
-    }
+    };
     var callback = {
         1: f("MyDorm"),
         2: f("Watching"),
@@ -69,7 +68,6 @@ function init(title) {
     setDebug(title);
     setMoreBtn();
     setClock();
-    watchingPageReset();
     typeOnNotebook();
     //pageSlider.go(2);
 }
@@ -96,6 +94,8 @@ function setPage() {
         $(".list-group-item").css("padding", hAve >= 10 ? 10 : hAve + "px 15px");
     }
     //console.log("after" + $(".list-group").css("margin-bottom"));
+
+    setPosition();
 }
 
 var thisListItem;
@@ -233,96 +233,4 @@ function typeOnNotebook() {
     appendText("l1", "$ ", 5, 0);
 
     setTimeout("typingMutex = false;", adder);
-}
-
-function watchingPageReset() {
-    lazerAdjust = setInterval("updateLazer()", 10);
-    setTimeout("window.clearInterval(lazerAdjust)", 400);
-    setTimeout('$(".lazer").fadeOut();', 300);
-    setTimeout('$(".watching-img").fadeOut();', 300);
-
-    $(".watching-img").css("height", "4px");
-    $(".watching-img").css("width", "4px");
-    if ($(window).height() > $(window).width()) {
-        $(".watching-img").css("top", 75 + 0.375 * $(window).width() - 9 + "px");
-        $(".watching-img").css("left", 12 + 0.5 * $(window).width() - 12 + "px");
-    }
-    else {
-        $(".watching-img").css("top", 56 + 0.5 * $(window).height() - 53 + "px");
-        $(".watching-img").css("left", 24 + 0.5 * $(window).height() / 0.75 - 53 / 0.75 + "px");
-    }
-}
-function watchingPageAnimate() {
-
-    lazerAdjust = setInterval("updateLazer()", 40);
-    setTimeout("window.clearInterval(lazerAdjust)", 400);
-
-    $(".watching-img").css("display", "block");
-    $(".lazer").css("display", "block");
-
-    if ($(window).height() > $(window).width()) {
-        $(".watching-img").css("width", "calc(100% - 24px)");
-        $(".watching-img").css("left", "12px");
-        setTimeout('$(".watching-img").css("height", getPicHeight())', 400);
-        setTimeout('$(".watching-img").css("top", "75px")', 400);
-
-    }
-    else {
-        $(".watching-img").css("height", "calc(100% - 106px)");
-        $(".watching-img").css("top", "56px");
-        setTimeout('$(".watching-img").css("width", getPicWidth())', 400);
-        setTimeout('$(".watching-img").css("left", "24px")', 400);
-    }
-
-    //setTimeout('$(".watching-img").css("height", getPicHeight())', 1000);
-    //setTimeout('$(".watching-img").css("top", "calc(25% - 24px)")', 1000);
-}
-function getPicHeight() {
-    return parseFloat($(".watching-img").css("width")) * 0.75;
-}
-function getPicWidth() {
-    return parseFloat($(".watching-img").css("height")) / 0.75;
-}
-
-function updateLazer() {
-    setLazer(
-        parseFloat($('.watching-img').css("left")) - 32,
-        parseFloat($('.watching-img').css("top")) - 50,
-        parseFloat($('.watching-img').css("width")),
-        parseFloat($('.watching-img').css("height"))
-    );
-}
-
-function setLazer(x, y, w, h) {
-    "use strict";
-    var
-        dR = "M0,0L" + (x + w) + "," + y + "L" + (x + w) + "," + (y + h) + "Z",
-        dB = "M0,0L" + x + "," + (y + h) + "L" + (x + w) + "," + (y + h) + "Z",
-        dL = "M0,0L" + x + "," + y + "L" + x + "," + (y + h) + "Z",
-        dT = "M0,0L" + x + "," + y + "L" + (x + w) + "," + y + "Z";
-    $(".lazer-right").attr('d', dR);
-    $(".lazer-bottom").attr('d', dB);
-    $(".lazer-left").attr('d', dL);
-    $(".lazer-top").attr('d', dT);
-}
-
-function loadWatchingText() {
-    $(".text-update").css("stroke-dashoffset", "250");
-    $(".text-update")
-        .animate({strokeDashoffset: "0"}, 4000)
-        .delay(1000)
-        .animate({strokeDashoffset: "-250"}, 1000)
-    ;
-}
-
-function watchingReload() {
-    $.ajax({
-        url: "/currentWatchingImgLocation",
-        success: function(data) {
-            $(".watching-img").attr("src", data);
-            loadWatchingText();
-            if ($(".subtitle").html() == "Watching")
-                setTimeout("watchingReload()", 7000);
-        }
-    });
 }
