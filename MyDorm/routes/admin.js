@@ -17,13 +17,15 @@ router.post('/login', function(req, res, next) {
     var data = req.body;
     var pw = data.password;
 
-    if (pw == '') { // 这里是唯一的登录密码
+    console.log(pw);
+
+    if (pw == '1') { // 这里是唯一的登录密码
         User.find(function(err, data) {
             res.render('admin/admin', { title: '后台管理', users: data});
         });
     }
     else {
-        res.render('admin/login', { title: '后台登录'});
+        //res.render('admin/login', { title: '后台登录'});
     }
 });
 
