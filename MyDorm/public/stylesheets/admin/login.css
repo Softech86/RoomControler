@@ -1,0 +1,10 @@
+body {
+    background-color: #000;
+}
+
+input {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 40%;
+}

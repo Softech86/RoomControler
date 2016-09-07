@@ -1,0 +1,91 @@
+<% include header_m.ejs %>
+
+<!--PageSlider-->
+<script src="//cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
+<link rel="stylesheet" href="../pageSlider/pageSlider.css">
+<script src="../pageSlider/pageSlider.js"></script>
+
+<!--mine-->
+<script src="/javascripts/time.js"></script>
+<script src="/javascripts/index_m/init.js"></script>
+
+<link rel="stylesheet" href="/stylesheets/header_m.css">
+<link rel="stylesheet" href="/stylesheets/image.css">
+<script>
+    (
+            function(){
+
+            }
+    )();
+
+
+    $(document).ready(function () {
+        init("<%= title %>")
+    });
+
+</script>
+
+<nav id="topbar" class="navbar navbar-inverse">
+    <div class = "navbar-brand" href = "#" style="float: left; width: 15%">
+        <span class="moreBtn">
+            <span class="page" id="page-l"></span>
+            <span class="page" id="page-m"></span>
+            <span class="page" id="page-r"></span>
+        </span>
+    </div>
+    <span class="title">
+        <div class="title">MyDorm</div>
+        <div class="subtitle"></div>
+    </span>
+    <div class = "navbar-brand" href = "#" style="float: right;width: 15%; margin-right: 0px;">
+        <div class = "clock" style="display: none">
+            <div class = "dial"></div>
+            <div class = "minute"></div>
+            <div class = "hour"></div>
+        </div>
+        <div class="clock-dig">
+            <div class="hour"></div>
+            <div class="minute"></div>
+            <style></style>
+        </div>
+    </div>
+</nav>
+
+<div id="list">
+    <ul class="list-group">
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Watching</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Control</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Message</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Schedule</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">Leisure</a></li>
+        <li class="list-group-item">&nbsp;<div></div><a href="#">About</a></li>
+    </ul>
+    <div class="city"></div>
+</div>
+
+
+<div id="display">
+
+    <div id="welcome" class="section sec1">
+        <% include welcome.ejs %>
+    </div>
+
+    <div id="watching" class="section sec2">
+        <% include watching.ejs %>
+    </div>
+
+    <div id="control" class="section sec3">
+        <% include control.ejs %>
+    </div>
+
+    <div id="message" class="section sec4">
+        <% include message.ejs %>
+    </div>
+
+    <div id="shedule" class="section sec5">
+        <% include schedule.ejs %>
+    </div>
+
+</div>
+
+<% include ../footer.ejs %>

@@ -7,10 +7,10 @@ var Schema = mongoose.Schema;
 
 // Define User schema
 var UserSchema = new Schema({
-    email : String,
-    name : String,
-    salt : String,
-    password : String
+    email: String,
+    name: String,
+    id: String,
+    password: String
 });
 
 // export them

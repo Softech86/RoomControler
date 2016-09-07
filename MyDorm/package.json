@@ -18,6 +18,8 @@
 
     "mongodb": "*",
     "mongoose": "*",
-    "express-mongoose": "*"
+    "express-mongoose": "*",
+
+    "express-session": "*"
   }
 }

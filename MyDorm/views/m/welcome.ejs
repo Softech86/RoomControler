@@ -1,0 +1,130 @@
+<div class="wall wall-1"></div>
+
+<div class="stuff-on-top">
+
+    <div class="logo"></div>
+    <div class="tip">
+        <span class="greeting-sm">Welcome</span>
+        <span>,&nbsp;</span>
+        <span class="username"><%= user.name %></span>
+    </div>
+
+    <div class="notebook-sm">
+        <div class='screen'></div>
+        <div class='keyboard-top'></div>
+        <div class='keyboard'></div>
+
+
+        <div class="desc">
+            <!--div id="l1">$ brew install</div>
+            <div id="l2">&nbsp;&nbsp;&nbsp;<b>Girlfriend</b></div>
+            <div id="l3">Error: No avai</div-->
+            <div id="l1"></div>
+            <div id="l2"></div>
+            <div id="l3"></div>
+        </div>
+    </div>
+
+    <div class="coffee-sm">
+        <div class="steam"></div>
+        <div class="steams"></div>
+        <div class="cup"></div>
+        <div class="top"></div>
+        <div class="ear"></div>
+        <div class="plate"></div>
+    </div>
+
+    <div class="table-sm"></div>
+</div>
+
+
+<div class="guitar-sm guitar-thick">
+    <div class="guitar-head"></div>
+    <div class="guitar-neck">
+        <% var top = 144 %>
+        <% var dis = [7, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3] %>
+        <% for (var f = 1; f <= 21; ++f) { %>
+        <% top += dis[f - 1] %>
+        <div class="fret fret-<%= f %>" style="top: <%= top %>px; width: 10px; left: -1px;"></div>
+        <% } %>
+    </div>
+    <div class="guitar-string">
+        <div class="turning">
+            <div class="turning l e"></div>
+            <div class="turning l a"></div>
+            <div class="turning l d"></div>
+            <div class="turning r g"></div>
+            <div class="turning r b"></div>
+            <div class="turning r e-h"></div>
+        </div>
+        <div class="string">
+            <div class="string e"></div>
+            <div class="string a"></div>
+            <div class="string d"></div>
+            <div class="string g"></div>
+            <div class="string b"></div>
+            <div class="string e-h"></div>
+        </div>
+        <div class="pin">
+            <div class="pin e"></div>
+            <div class="pin a"></div>
+            <div class="pin d"></div>
+            <div class="pin g"></div>
+            <div class="pin b"></div>
+            <div class="pin e-h"></div>
+        </div>
+    </div>
+    <div class="guitar-body">
+        <div class="shoulder"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+        <div class="empty-l"></div>
+        <div class="empty-r"></div>
+        <div class="bridge"></div>
+    </div>
+</div>
+<div class="guitar-sm">
+    <div class="guitar-head"></div>
+    <div class="guitar-neck">
+        <% var top = 144 %>
+        <% var dis = [7, 7, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3] %>
+        <% for (var f = 1; f <= 21; ++f) { %>
+        <% top += dis[f - 1] %>
+        <div class="fret fret-<%= f %>" style="top: <%= top %>px; width: 10px; left: -1px;"></div>
+        <% } %>
+    </div>
+    <div class="guitar-string">
+        <div class="turning">
+            <div class="turning l e"></div>
+            <div class="turning l a"></div>
+            <div class="turning l d"></div>
+            <div class="turning r g"></div>
+            <div class="turning r b"></div>
+            <div class="turning r e-h"></div>
+        </div>
+        <div class="string">
+            <div class="string e"></div>
+            <div class="string a"></div>
+            <div class="string d"></div>
+            <div class="string g"></div>
+            <div class="string b"></div>
+            <div class="string e-h"></div>
+        </div>
+        <div class="pin">
+            <div class="pin e"></div>
+            <div class="pin a"></div>
+            <div class="pin d"></div>
+            <div class="pin g"></div>
+            <div class="pin b"></div>
+            <div class="pin e-h"></div>
+        </div>
+    </div>
+    <div class="guitar-body">
+        <div class="shoulder"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+        <div class="empty-l"></div>
+        <div class="empty-r"></div>
+        <div class="bridge"></div>
+    </div>
+</div>

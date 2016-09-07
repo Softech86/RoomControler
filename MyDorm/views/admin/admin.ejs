@@ -8,9 +8,70 @@
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="/stylesheets/admin/admin.css">
+    <script src="/javascripts/admin/admin.js"></script>
+
 </head>
 
 <body>
-    进来啦~~~
+    <a href="/admin/logout">登出</a>
+    <button id="user-add" type="button" class="btn btn-default">添加</button>
+    <table class="table table-hover">
+        <tr>
+            <td>姓名</td>
+            <td>ID</td>
+            <td>电子邮箱</td>
+            <td>登录密码</td>
+            <td hidden>ObjectID</td>
+            <td>操作</td>
+        </tr>
+        <% for (var i in users) { %>
+        <form method="POST">
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div><%= users[i].name %></div>
+                        <input type="text" class="form-control" name="input-name" value="<%= users[i].name %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div><%= users[i].id %></div>
+                        <input type="text" class="form-control" name="input-id" value="<%= users[i].id %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div><%= users[i].email %></div>
+                        <input type="email" class="form-control" name="input-email" value="<%= users[i].email %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div>
+                            <% for (var t = 0; t < users[i].password.length; ++t) { %>
+                            *
+                            <% } %>
+                        </div>
+                        <input type="password" class="form-control" name="input-password" value="<%= users[i].password %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group" hidden>
+                        <div><%= users[i]._id %></div>
+                        <input type="text" class="form-control" name="_id" value="<%= users[i]._id %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <button name="user-change" type="button" class="btn btn-primary">修改</button>
+                        <button name="user-cancel" type="button" class="btn btn-primary">取消</button>
+                        <button name="user-save" type="button" class="btn btn-primary">保存</button>
+                        <button name="user-delete" type="button" class="btn btn-danger">删除</button>
+                    </div>
+                </td>
+            </tr>
+        </form>
+        <% } %>
+    </table>
 </body>
 </html>
