@@ -33,13 +33,28 @@ function watchingReload() {
     });
 }
 
-function setPosition() {
+function setWatching() {
+    var
+        bottom =
+            parseFloat($('.watching-pc').css('height')) * 0.327 +
+            parseFloat($('.watching-pc').css('bottom'));
+    $('.watching-img').css('bottom', bottom + 'px');
+
+
     if (window.screen.availWidth > window.screen.availHeight) { //横屏
         $('.watching-pc').css('width', 'auto');
         $('.watching-pc').css('height', 'calc(95% - 90px)');
+        $('.watching-img').css('height', '41.6%');
+        $('.watching-img').css('width', 'auto');
+        $('.watching-img').css('left', '6%');
+
     }
     else { // 竖屏
         $('.watching-pc').css('width', '95%');
         $('.watching-pc').css('height', 'auto');
+        $('.watching-img').css('height', 'auto');
+        $('.watching-img').css('width', '87%');
+        $('.watching-img').css('left', '8%');
+
     }
 }

@@ -1,31 +1,31 @@
 <script src="/javascripts/index_m/control.js"></script>
 
+<div id="user-password" hidden><%= user.password %></div>
 <div class="wall wall-3"></div>
-<button class="control-btn">click</button>
 <div class="control-lock-pad">
-    <div class="control-lock-bg"></div>
-    <div class="control-lock-yin">
-        <embed src="/images/lock-yin.svg" width="150" height="150"
-               type="image/svg+xml"
-               pluginspage="http://www.adobe.com/svg/viewer/install/" />
-    </div>
-    <div class="control-lock-yang ">
-        <embed src="/images/lock-yang.svg" width="150" height="150"
-               type="image/svg+xml"
-               pluginspage="http://www.adobe.com/svg/viewer/install/" />
+    <div class="control-lock-bg">
+        LOADING
     </div>
     <div class="control-lock-yin control-lock-yin-thick">
-        <embed src="/images/lock-yin.svg" width="150" height="150"
+        <embed src="/images/lock-yin.svg" width="75" height="75"
                type="image/svg+xml"
                pluginspage="http://www.adobe.com/svg/viewer/install/" />
     </div>
     <div class="control-lock-yang control-lock-yang-thick">
-        <embed src="/images/lock-yang.svg" width="150" height="150"
+        <embed src="/images/lock-yang.svg" width="75" height="75"
+               type="image/svg+xml"
+               pluginspage="http://www.adobe.com/svg/viewer/install/" />
+    </div>
+    <div class="control-lock-yin">
+        <embed src="/images/lock-yin.svg" width="75" height="75"
+               type="image/svg+xml"
+               pluginspage="http://www.adobe.com/svg/viewer/install/" />
+    </div>
+    <div class="control-lock-yang">
+        <embed src="/images/lock-yang.svg" width="75" height="75"
                type="image/svg+xml"
                pluginspage="http://www.adobe.com/svg/viewer/install/" />
     </div>
 
 </div>
-<script>
-    $('.control-btn').click(controlToggle);
-</script>
+

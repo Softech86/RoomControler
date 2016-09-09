@@ -89,5 +89,6 @@ app.use(function(req,res,next){
 //mongo database
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/mydormDb');
+//mongoose.connect('mongodb://root:123011@dds-m5e5b6fa926c26741.mongodb.rds.aliyuncs.com:3717,dds-m5e5b6fa926c26742.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-1828771');
 
 module.exports = app;

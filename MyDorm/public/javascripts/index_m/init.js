@@ -7,6 +7,7 @@ var
 function init(title) {
     setPage();
     $(window).resize(function() {
+        console.log('window resize');
         setPage();
     });
 
@@ -48,11 +49,16 @@ function init(title) {
             console.log(title);
 
             if (title == "Watching") {
-                $(".watching-img").fadeIn();
+                setWatching();
                 watchingReload();
             }
+
+            if (title == "Control") {
+                getLockStatus();
+                $('.control-lock-btn').fadeIn();
+            }
             else {
-                $(".watching-img").fadeOut();
+                $('.control-lock-btn').fadeOut();
             }
         }
     };
@@ -69,6 +75,9 @@ function init(title) {
     setMoreBtn();
     setClock();
     typeOnNotebook();
+
+    setControl();
+
     //pageSlider.go(2);
 }
 
@@ -95,7 +104,7 @@ function setPage() {
     }
     //console.log("after" + $(".list-group").css("margin-bottom"));
 
-    setPosition();
+    setWatching();
 }
 
 var thisListItem;
@@ -110,7 +119,7 @@ function listClicked() {
     thisListItem.prev().css("top", "0px");
     thisListItem.prev().css("left", "0px");
 
-};
+}
 
 function bodyClicked() {
     $(".list-group-item a").css("opacity", "1.0");
@@ -119,7 +128,7 @@ function bodyClicked() {
     //$(".list-group-item div").css("top", "23px");
     $(".list-group-item div").css("left", "12px");
 
-};
+}
 
 function setMoreBtn() {
     $(".moreBtn").click(function() {
