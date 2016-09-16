@@ -171,7 +171,7 @@ a:focus, a:hover, a:active {
     top: 100%;
     position: absolute;
     opacity: 0.4;
-    padding: 20px 0 10px 0;
+    padding: calc(20px + 45%) 0 10px 0;
 }
 
 #copyright:before {
@@ -577,4 +577,22 @@ a:focus, a:hover, a:active {
 
 .bottom-right-button-width:after {
     transform: skewY(-1.5deg) !important;
+}
+
+.qr-donate {
+    width: 40%;
+    position: absolute;
+    margin-top: 5%;
+    top: 100%;
+    left: 30%;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+img.invert {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
 }

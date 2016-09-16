@@ -87,6 +87,8 @@ function isVertical() {
 
 function setPage() {
 
+
+
     if (isVertical()) {
         $('#copyright').css('font-size', '12px');
         $('.bottom-button').removeClass('bottom-button-width');
