@@ -87,10 +87,16 @@ function isVertical() {
 
 function setPage() {
 
-    if (isVertical())
+    if (isVertical()) {
         $('#copyright').css('font-size', '12px');
-    else
+        $('.bottom-button').removeClass('bottom-button-width');
+        $('.bottom-right-button').removeClass('bottom-right-button-width');
+    }
+    else {
         $('#copyright').css('font-size', '16px');
+        $('.bottom-button').addClass('bottom-button-width');
+        $('.bottom-right-button').addClass('bottom-right-button-width');
+    }
 
     setWatching();
     setBottomBar();

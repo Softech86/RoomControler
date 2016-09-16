@@ -163,7 +163,7 @@ a:focus, a:hover, a:active {
 #copyright {
     font-size: 14px;
     color: #fff;
-    background-color: #000;
+    background-color: #111;
     line-height: 150%;
     text-align: center;
     width: 100%;
@@ -437,6 +437,16 @@ a:focus, a:hover, a:active {
     position: absolute;
 }
 
+.bottom-bg {
+    top: 0;
+    width: 50%;
+    left: 25%;
+    height: 100%;
+    background-color: #aaa;
+    position: absolute;
+    opacity: 0.1;
+}
+
 .bottom-deco {
     bottom: 0px;
     width: 50%;
@@ -475,7 +485,6 @@ a:focus, a:hover, a:active {
     height: 30%;
     position: absolute;
 
-    transition: all 0.5s ease-in-out;
 }
 
 .bottom-page-bar-item {
@@ -553,4 +562,19 @@ a:focus, a:hover, a:active {
     content: "NEXT";
     right: 0;
     transform: skewY(-1deg);
+}
+
+.bottom-button-width:before {
+    top: 3px !important;
+
+}
+
+.bottom-button-width:after {
+    top: 4px !important;
+    padding-top: 5% !important;
+    font-size: 20px;
+}
+
+.bottom-right-button-width:after {
+    transform: skewY(-1.5deg) !important;
 }
