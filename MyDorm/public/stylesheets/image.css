@@ -1,3 +1,126 @@
+.page-rotate {
+    height: 12px !important;
+    width: 21px !important;
+    transform-origin:center center 0;
+    transform: rotate3d(1,0,0,15deg);
+}
+
+.page-l-rotate {
+    left: 2px !important;
+    top: 0px !important;
+}
+.page-m-rotate {
+    left: 2px !important;
+    top: 7px !important;
+}
+.page-r-rotate {
+    left: 2px !important;
+    top: 14px !important;
+}
+
+.clock {
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    right: 0px;
+    background-color: transparent;
+    position: relative;
+    float: right;
+}
+
+.clock .dial {
+    background-color: #ccc;
+    width: 24px;
+    height: 24px;
+    border: 2px #000 solid;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px #fff;
+    position: absolute;
+}
+.clock .dial:after {
+    z-index: 1;
+    content: "";
+    background-color: #333;
+    width: 1px;
+    height: 1px;
+    border: 1px #222 solid;
+    border-radius: 100%;
+    box-shadow: 0px 0px 1px #000;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.clock .minute {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: transparent;
+    transform:rotate(120deg)
+}
+.clock .minute:after {
+    content: "";
+    width: 0px;
+    height: 9px;
+    left: 11px;
+    border: 1px #77f solid;
+    border-radius:1px;
+    top: 2px;
+    position: absolute;
+}
+.clock .hour {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: transparent;
+    transform:rotate(160deg)
+}
+.clock .hour:after {
+    content: "";
+    width: 0px;
+    height: 6px;
+    border: 1px #000 solid;
+    border-radius: 100%;
+    left: 11px;
+    top: 5px;
+    position: absolute;
+}
+
+.clock-dig {
+    font-size: 15px;
+    width: 25px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    margin-top: -5px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    border: #666 solid;
+    border-width: 0px 1px;
+    position: relative;
+}
+.clock-dig:before {
+    content: "";
+    width: 25px;
+    height: 30px;
+    left: -1px;
+    top: 0px;
+    border: #bbb solid;
+    border-width: 0px 0px 0px 2px;
+    position: absolute;
+}
+
+.clock-dig:after {
+    content: "";
+    width: 25px;
+    height: 30px;
+    left: -1px;
+    top: 0px;
+    border: #bbb solid;
+    border-width: 0px 2px 0px 0px;
+    position: absolute;
+}
+
 .notebook{
     float: left;
     position: absolute;
@@ -841,23 +964,6 @@
     right: calc(2px - 0 * 20px);
 }
 
-.watching-text {
-    position: absolute;
-    left: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    line-height: 1.4;
-    color: #ccc;
-    float: left;
-}
-
-.watching-time {
-    float: right;
-    font-style: italic;
-    left: -5px;
-    position: relative;
-}
-
 .watching-tip {
     position: absolute;
     right: 0px;
@@ -876,4 +982,50 @@
     top: 7px;
     left: 5px;
     background-color: #387;
+}
+
+.message-window, .message-window-bg {
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    background-color: transparent;#fcc;
+    width: 85%;
+    overflow: scroll;
+    height: calc(95% - 98px);
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.message-window-bg {
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.message-panel {
+    padding: 10px 0;
+    margin-top: 10px;
+    z-index: 4;
+}
+
+.message-panel:before {
+    content: "";
+    width: 8px;
+    height: auto;
+    background-color: #fa6;
+    margin-top: 10px;
+    z-index: 4;
+}
+
+.message-receive {
+
+}
+
+.message-send {
+
+}
+
+.message-title {
+}
+
+.message-content {
 }

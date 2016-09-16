@@ -1,11 +1,31 @@
-body {
+body{
+    height:100%;
+    background-color: #000;
+    /*overflow:hidden;*/
     transition: all 0.5s ease-in-out;
+}
+
+.section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.section-now {
+    opacity: 1 !important;
+    display: block !important;
 }
 
 .navbar {
     opacity:0.95;
     margin-bottom: 0px;
     z-index: 3;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar-inverse a.navbar-brand {
@@ -96,144 +116,15 @@ body {
     z-index: 1;
 }
 
-.page-rotate {
-    height: 12px !important;
-    width: 21px !important;
-    transform-origin:center center 0;
-    transform: rotate3d(1,0,0,15deg);
-}
-
-.page-l-rotate {
-    left: 2px !important;
-    top: 0px !important;
-}
-.page-m-rotate {
-    left: 2px !important;
-    top: 7px !important;
-}
-.page-r-rotate {
-    left: 2px !important;
-    top: 14px !important;
-}
-
-.clock {
-    width: 25px;
-    height: 25px;
-    top: -2px;
-    right: 0px;
-    background-color: transparent;
-    position: relative;
-    float: right;
-}
-
-.clock .dial {
-    background-color: #ccc;
-    width: 24px;
-    height: 24px;
-    border: 2px #000 solid;
-    border-radius: 100%;
-    box-shadow: 0px 0px 5px #fff;
-    position: absolute;
-}
-.clock .dial:after {
-    z-index: 1;
-    content: "";
-    background-color: #333;
-    width: 1px;
-    height: 1px;
-    border: 1px #222 solid;
-    border-radius: 100%;
-    box-shadow: 0px 0px 1px #000;
-    position: absolute;
-    top: 9px;
-    left: 9px;
-}
-
-.clock .minute {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-color: transparent;
-    transform:rotate(120deg)
-}
-.clock .minute:after {
-    content: "";
-    width: 0px;
-    height: 9px;
-    left: 11px;
-    border: 1px #77f solid;
-    border-radius:1px;
-    top: 2px;
-    position: absolute;
-}
-.clock .hour {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-color: transparent;
-    transform:rotate(160deg)
-}
-.clock .hour:after {
-    content: "";
-    width: 0px;
-    height: 6px;
-    border: 1px #000 solid;
-    border-radius: 100%;
-    left: 11px;
-    top: 5px;
-    position: absolute;
-}
-
-.clock-dig {
-    font-size: 15px;
-    width: 25px;
-    height: 30px;
-    float: right;
-    text-align: center;
-    margin-top: -5px;
-    line-height: 15px;
-    letter-spacing: 0px;
-    border: #666 solid;
-    border-width: 0px 1px;
-    position: relative;
-}
-.clock-dig:before {
-    content: "";
-    width: 25px;
-    height: 30px;
-    left: -1px;
-    top: 0px;
-    border: #bbb solid;
-    border-width: 0px 0px 0px 2px;
-    position: absolute;
-}
-
-.clock-dig:after {
-    content: "";
-    width: 25px;
-    height: 30px;
-    left: -1px;
-    top: 0px;
-    border: #bbb solid;
-    border-width: 0px 2px 0px 0px;
-    position: absolute;
-}
-
 .darkBg {
     background-color: #000 !important;
-}
-
-#list {
-    display: none;
-    margin: auto;
-    width: 100%;
 }
 
 .list-group {
     border-width: 0px;
     width: 90%;
     margin: auto;
-    margin-bottom: 1000px;
+    margin-top: 60px;
 
     transition: margin-bottom 0.3s ease-in-out;
 }
@@ -249,7 +140,7 @@ body {
 .list-group-item div {
     float: left;
     background: linear-gradient(to right, #dde 0%, #000 100%);
-    z-index: -1;
+    z-index: 0;
     opacity: 0.5;
 
     border-radius: 24px 0px 0px 23px;
@@ -269,32 +160,18 @@ a:focus, a:hover, a:active {
     color: #fff;
 }
 
-
-.city {
-    background: url(/images/city.gif);
-    background-color: transparent;
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    width: 100%;
-    bottom: 0px;
-    float: left;
-    left: 0px;
-    filter: invert(1);
-    -webkit-filter: invert(1);
-    margin-top: 50px;
-}
-
 #copyright {
-    font-size: 5px;
-    color: #999;
-    background: transparent;linear-gradient(to bottom, #000 0%,#000 100%);
-    opacity: 0.9;
-    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
     line-height: 150%;
+    text-align: center;
     width: 100%;
     z-index: 0;
-    bottom: 10px;
+    top: 100%;
     position: absolute;
+    opacity: 0.4;
+    padding: 20px 0 10px 0;
 }
 
 #copyright:before {
@@ -303,15 +180,6 @@ a:focus, a:hover, a:active {
 
 #copyright:after {
     content: "Copyright © 2016-2016 Softech. All Rights Reserved.";
-}
-
-#welcome {
-    width: 100%;
-    /*height: 205px;
-    position: relative;
-    */
-    height: 100%;
-    background-color: #334;
 }
 
 .logo {
@@ -421,6 +289,11 @@ a:focus, a:hover, a:active {
     position: absolute;
     border: solid;
     border-width: 0px 0px 12px 32px;
+
+    height: calc(95% - 30px);
+    top: 0%;
+    border-color: #fff #000;
+    opacity: 0.3;
 }
 
 .wall-1 {
@@ -453,10 +326,28 @@ a:focus, a:hover, a:active {
     border-color: #d87 #b65;
 }
 
-#watching {
-    width: 100%;
-    height: 100%;
-    background-color: #222;
+.watching-text {
+    position: absolute;
+    left: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #ccc;
+    float: left;
+}
+
+.watching-time {
+    float: right;
+    font-style: italic;
+    left: -5px;
+    position: relative;
+}
+
+.watching-electric {
+    float: right;
+    font-style: italic;
+    left: -5px;
+    position: relative;
 }
 
 .watching-img {
@@ -473,12 +364,6 @@ a:focus, a:hover, a:active {
     width: 95%;
     bottom: calc(5% + 31px);
     left: 4%;
-}
-
-#control {
-    width: 100%;
-    height: 100%;
-    background-color: #054;
 }
 
 .control-lock-pad {
@@ -537,22 +422,135 @@ a:focus, a:hover, a:active {
     border-radius: 40px;
     color: #054;
     background-color: #fff;
-    z-index: 3;
-    padding: 20px 0px;
+    z-index: 1;
+    padding: 20px 0;
     width: 80px;
     height: 80px;
     text-align: center;
     display: none;
 }
 
-#message {
+.bottom-bar {
+    bottom: 0px;
     width: 100%;
-    height: 100%;
-    background-color: #024;
+    height: calc(5% + 30px);
+    position: absolute;
 }
 
-#shedule {
-    width: 100%;
+.bottom-deco {
+    bottom: 0px;
+    width: 50%;
+    left: 25%;
+    border: solid;
+    border-width: 15px 12px;
+    border-color: transparent transparent #aaa transparent;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.bottom-deco:before {
+    content: "";
+    bottom: -15px;
+    width: calc(100% + 24px);
+    left: -12px;
+    border: solid;
+    border-width: 0px 19px 5px 15px;
+    border-color: transparent transparent #000 transparent;
+    position: absolute;
+}
+
+.bottom-deco:after {
+    content: "";
+    top: 0px;
+    width: calc(100% + 0px);
+    left: 0px;
+    border: solid;
+    border-width: 10px 7px 0px 3px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+}
+
+.bottom-page-bar {
+    top: 12%;
+    height: 30%;
+    position: absolute;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom-page-bar-item {
+    width: 8px;
     height: 100%;
-    background-color: #a54;
+    margin: 4px 2px;
+    background-color: #000;
+    opacity: 0.3;
+    float: left;
+    border-radius: 1px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom-page-bar-item-select {
+    background-color: #fff !important;
+    opacity: 0.5 !important;
+}
+
+.bottom-button {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    border-color: #000 transparent;
+    opacity: 0.2;
+    text-align: center;
+}
+
+.bottom-button:before {
+    content: "";
+    position: absolute;
+    background-color: #aaa;
+    width: 20%;
+    height: 100%;
+    top: 1px;
+}
+
+.bottom-button:after {
+    content: "";
+    position: absolute;
+    background-color: #999;
+    width: 80%;
+    height: 100%;
+    top: 2px;
+    padding-top: 20%;
+}
+
+.bottom-left-button {
+    left: 0;
+}
+
+.bottom-left-button:before {
+    right: 0;
+    transform: skewY(-10deg);
+}
+
+.bottom-left-button:after {
+    content: "PREV";
+    left: 0;
+    transform: skewY(1deg);
+}
+
+.bottom-right-button {
+    right: 0;
+}
+
+.bottom-right-button:before {
+    left: 0;
+    transform: skewY(10deg);
+}
+
+.bottom-right-button:after {
+    content: "NEXT";
+    right: 0;
+    transform: skewY(-1deg);
 }

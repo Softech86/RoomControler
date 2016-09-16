@@ -9,8 +9,19 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: '首页', layout: 'layout.ejs'});
 });
 
-router.get('/currentWatchingImgLocation', function(req, res, next) {
-  res.send('/images/watching/' + Math.round(Math.random()) + '.png');
+router.get('/currentWatchingData', function(req, res, next) {
+  var
+      data = {
+        path: "",
+        updateTime: "",
+        electric: 0
+      };
+
+  data.path = '/images/watching/' + Math.round(Math.random()) + '.png';
+  data.updateTime = "12:34:50";
+  data.electric = 43.21;
+
+  res.send(data);
   /*WatchImg.find({}, {}, {sort: [['CreateTimestamp', -1]]}, function(err, data) {
     console.log(data);
   });*/

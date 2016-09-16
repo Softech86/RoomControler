@@ -87,7 +87,7 @@ function getLockStatus() {
             else {
                 yinyangUnlockAni();
             }
-            
+
             $('.control-lock-btn-remind').html(data ? 'UNLOCK' : 'LOCK')
         }
     })

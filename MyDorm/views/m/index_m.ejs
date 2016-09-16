@@ -1,13 +1,10 @@
 <% include header_m.ejs %>
 
-<!--PageSlider-->
-<script src="//cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
-<link rel="stylesheet" href="../pageSlider/pageSlider.css">
-<script src="../pageSlider/pageSlider.js"></script>
-
 <!--mine-->
 <script src="/javascripts/time.js"></script>
 <script src="/javascripts/index_m/init.js"></script>
+<script src="/javascripts/index_m/pageTab.js"></script>
+
 
 <link rel="stylesheet" href="/stylesheets/header_m.css">
 <link rel="stylesheet" href="/stylesheets/image.css">
@@ -51,45 +48,64 @@
     </div>
 </nav>
 
-<div id="list">
-    <ul class="list-group">
-        <li class="list-group-item">&nbsp;<div></div><a href="#">Watching</a></li>
-        <li class="list-group-item">&nbsp;<div></div><a href="#">Control</a></li>
-        <li class="list-group-item">&nbsp;<div></div><a href="#">Message</a></li>
-        <li class="list-group-item">&nbsp;<div></div><a href="#">Schedule</a></li>
-        <li class="list-group-item">&nbsp;<div></div><a href="#">Leisure</a></li>
-        <li class="list-group-item">&nbsp;<div></div><a href="#">About</a></li>
-    </ul>
-    <div class="city"></div>
-</div>
-
-
-<div class="control-lock-btn">
-    <span class="glyphicon glyphicon-lock"></span>
-    <div class="control-lock-btn-remind">LOCK</div>
-</div>
+<div class="wall"></div>
 
 <div id="display">
-    <div id="welcome" class="section sec1">
-        <% include welcome.ejs %>
+    <div id="home" class="section">
+        <% include home.ejs %>
     </div>
 
-    <div id="watching" class="section sec2">
+    <div id="watching" class="section">
         <% include watching.ejs %>
     </div>
 
-    <div id="control" class="section sec3">
+    <div id="control" class="section">
         <% include control.ejs %>
     </div>
 
-    <div id="message" class="section sec4">
+    <div id="message" class="section">
         <% include message.ejs %>
     </div>
 
-    <div id="shedule" class="section sec5">
+    <div id="shedule" class="section">
         <% include schedule.ejs %>
     </div>
 
+
+    <div id="list" class="section">
+        <% include list.ejs %>
+    </div>
+
 </div>
+
+<div class="bottom-bar">
+    <div class="bottom-deco"></div>
+    <div class="bottom-button bottom-left-button"></div>
+    <div class="bottom-button bottom-right-button"></div>
+    <div class="bottom-page-bar">
+        <% var listGroupName = ['Home', 'Watching', 'Control', 'Message', 'Schedule', 'Leisure', 'About'] %>
+        <% for (var item in listGroupName) { %>
+        <div class="bottom-page-bar-item"></div>
+        <% } %>
+    </div>
+
+    <script>
+        $('.bottom-left-button').click(function() {
+            if (pageTabber.pageNowIndex == 0)
+                pageTabber.tabTo(pageTabber.pageNowIndex - 2);
+            else
+                pageTabber.tabTo(pageTabber.pageNowIndex - 1);
+        });
+
+        $('.bottom-right-button').click(function() {
+            if (pageTabber.pageNowIndex + 2 == pageTabber.pageLen)
+                pageTabber.tabTo(pageTabber.pageNowIndex + 2);
+            else
+                pageTabber.tabTo(pageTabber.pageNowIndex + 1);
+        })
+    </script>
+</div>
+
+
 
 <% include ../footer.ejs %>

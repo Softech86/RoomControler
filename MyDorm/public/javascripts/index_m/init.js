@@ -23,8 +23,6 @@ function init(title) {
                 return;
             }
 
-            var bgc = $(".current").css("background-color");
-            $("body").css("background-color", bgc);
             if (title == "MyDorm") {
                 $(".title .title").css("line-height", "50px");
                 $(".title .subtitle").fadeOut(300, changeSbt);
@@ -62,14 +60,16 @@ function init(title) {
             }
         }
     };
-    var callback = {
-        1: f("MyDorm"),
-        2: f("Watching"),
-        3: f("Control"),
-        4: f("Message"),
-        5: f("Schedule")
+    var callbackFunc = {
+        0: f("MyDorm"),
+        1: f("Watching"),
+        2: f("Control"),
+        3: f("Message"),
+        4: f("Schedule")
     };
-    var pageSlider = PageSlider.case({callback: callback});
+    //var pageSlider = PageSlider.case({callback: callback});
+
+    window.pageTabber = new PageTabber(callbackFunc);
 
     setDebug(title);
     setMoreBtn();
@@ -81,53 +81,28 @@ function init(title) {
     //pageSlider.go(2);
 }
 
+function isVertical() {
+    return innerHeight > innerWidth;
+}
 
 function setPage() {
-    //console.log("before" + $(".list-group").css("margin-bottom"));
 
-    $(".city").height(parseInt($("body").width() / 2800 * 991));
-
-    //console.log($(".city").offset().top);
-    //console.log($(".city").height());
-
-    var
-        h = $(window).height() - $(".city").offset().top - $(".city").height() + parseFloat($(".list-group").css("margin-bottom")),
-        min = parseInt($(".city").height() * 0.2);
-    if (h >= min) {
-        $(".city").css("display", "block");
-        $(".list-group").css("margin-bottom", h + "px");
-    }
-    else {
-        $(".city").css("display", "none");
-        var hAve = $(window).height() / 12 - 17.6;
-        $(".list-group-item").css("padding", hAve >= 10 ? 10 : hAve + "px 15px");
-    }
-    //console.log("after" + $(".list-group").css("margin-bottom"));
+    if (isVertical())
+        $('#copyright').css('font-size', '12px');
+    else
+        $('#copyright').css('font-size', '16px');
 
     setWatching();
+    setBottomBar();
 }
 
-var thisListItem;
-function listClicked() {
-    $(".list-group-item a").css("opacity", "0.3");
-    //$(".list-group-item").css("border-color", "transparent");
-    thisListItem.css("opacity", "1.0");
-    thisListItem.css("color", "#fff");
-    thisListItem.prev().css("background-color", "#fff");
-    thisListItem.prev().css("width", "100%");
-    thisListItem.prev().css("height", "100%");
-    thisListItem.prev().css("top", "0px");
-    thisListItem.prev().css("left", "0px");
-
-}
-
-function bodyClicked() {
-    $(".list-group-item a").css("opacity", "1.0");
-    $(".list-group-item div").css("width", "0%");
-    //$(".list-group-item div").css("height", "0%");
-    //$(".list-group-item div").css("top", "23px");
-    $(".list-group-item div").css("left", "12px");
-
+function setBottomBar() {
+    var
+        bpb = $(".bottom-page-bar"),
+        bpbBlank = parseFloat($('body').css('width')) - parseFloat(bpb.css('width'));
+    bpb.css('left', bpbBlank / 2 + 'px');
+    $(".bottom-bar").hide();
+    $(".bottom-bar").fadeIn(500);
 }
 
 function setMoreBtn() {
@@ -136,22 +111,32 @@ function setMoreBtn() {
         $("#page-m").toggleClass("page-rotate").toggleClass("page-m-rotate");
         $("#page-r").toggleClass("page-rotate").toggleClass("page-r-rotate");
 
-        $("body").toggleClass("darkBg");
         $("#topbar").toggleClass("darkBg");
 
-        $("#list").fadeToggle(500, setPage);
+
+        $('.bottom-bar').fadeToggle(500);
+
+        /*$("#list").fadeToggle(500, setPage);
         $("#display").fadeToggle(500);
-        $("#copyright").fadeToggle(500);
+        $("#copyright").fadeToggle(500);*/
 
+        if (pageTabber.pageNow.id == 'list') {
+            var lastIndex = pageTabber.pages.index(pageTabber.pageLast);
+            pageTabber.tabTo(lastIndex);
+        }
+        else {
+            pageTabber.tabTo(5);
+        }
     });
-
-    $("body").click(bodyClicked);
 
     $(".list-group-item a").click(function() {
-        thisListItem = $(this);
-        setTimeout("listClicked()", 1);
-    });
+        $("#page-l").toggleClass("page-rotate").toggleClass("page-l-rotate");
+        $("#page-m").toggleClass("page-rotate").toggleClass("page-m-rotate");
+        $("#page-r").toggleClass("page-rotate").toggleClass("page-r-rotate");
+        $("#topbar").toggleClass("darkBg");
 
+        $('.bottom-bar').fadeToggle(500);
+    });
 }
 
 
@@ -160,7 +145,7 @@ function setClock() {
     $(".clock").click(function() {
         $(".clock").toggle(500);
         $(".clock-dig").toggle(500);
-    })
+    });
     $(".clock-dig").click(function() {
         $(".clock").toggle(500);
         $(".clock-dig").toggle(500);

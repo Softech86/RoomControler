@@ -8,24 +8,22 @@ function loadWatchingText() {
 }
 
 function watchingReload() {
-    function getTimeFromFile(fName) {
-        "use strict";
-        return fName.substring(17, 17) + "000000";
-    }
-    console.log("watchingReload~");
     $.ajax({
-        url: "/currentWatchingImgLocation",
+        url: "/currentWatchingData",
         success: function(data) {
+            console.log("watchingReload~", data);
+
             $(".watching-img")
                 .fadeOut(200, function() {
-                    $(".watching-img").attr("src", data);
+                    $(".watching-img").attr("src", data.path);
                 })
                 .fadeIn(300);
             $(".watching-time")
                 .fadeOut(200, function() {
-                    $(".watching-time").html(getTimeFromFile(data));
+                    $(".watching-time").html(data.updateTime);
                 })
                 .fadeIn(300);
+            $(".watching-electric").html(data.electric);
             loadWatchingText();
             if ($(".subtitle").html() == "Watching")
                 setTimeout("watchingReload()", 7000);
