@@ -587,6 +587,7 @@ a:focus, a:hover, a:active {
     left: 30%;
     opacity: 0.4;
     z-index: 1;
+    display: block;
 }
 
 img.invert {
