@@ -1,9 +1,3 @@
-//interval function
-var
-    laserAdjust,
-    typeAni = null;
-
-
 function init(title) {
     setPage();
     $(window).resize(function() {
@@ -11,65 +5,43 @@ function init(title) {
         setPage();
     });
 
-    var f = function(title) {
-        if (!title)
-            title = "MyDorm";
-        return function() {
-            var changeSbt = function() {
-                $(".title .subtitle").html(title);
-            };
 
-            if ($(".title .subtitle").html() == title) {
-                return;
-            }
+    setReadyPositionBeforeTab();
+    var
+        callFunc = {
+            0: homeCallFunc,
+            1: watchingCallFunc,
+            2: controlCallFunc,
+            3: messageCallFunc,
+            4: scheduleCallFunc,
+            5: listCallFunc
+        },
+        leaveFunc = {
+            0: homeLeaveFunc,
+            1: watchingLeaveFunc,
+            2: controlLeaveFunc,
+            3: messageLeaveFunc,
+            4: scheduleLeaveFunc,
+            5: listLeaveFunc
+        },
+        delayTime = {
+            0: 700,
+            1: 700,
+            2: 700,
+            3: 700,
+            4: 700,
+            5: 0
+        },
+        callbackFunc = {
+            0: homeCallBackFunc,
+            1: watchingCallBackFunc,
+            2: controlCallBackFunc,
+            3: messageCallBackFunc,
+            4: scheduleCallBackFunc,
+            5: null
+        };
 
-            if (title == "MyDorm") {
-                $(".title .title").css("line-height", "50px");
-                $(".title .subtitle").fadeOut(300, changeSbt);
-
-                if (!typeAni) {
-                    if (typingMutex) {
-                        typeOnNotebook();
-                    }
-                    typeAni = setInterval("typeOnNotebook()", 10000);
-                }
-            }
-            else {
-                $(".title .title").css("line-height", "35px");
-                $(".title .subtitle").fadeOut(100, changeSbt).fadeIn(300);
-
-                window.clearInterval(typeAni);
-                typeAni = null;
-                typingMutex = true;
-            }
-
-            //watching 显示屏特效
-            console.log(title);
-
-            if (title == "Watching") {
-                setWatching();
-                watchingReload();
-            }
-
-            if (title == "Control") {
-                getLockStatus();
-                $('.control-lock-btn').fadeIn();
-            }
-            else {
-                $('.control-lock-btn').fadeOut();
-            }
-        }
-    };
-    var callbackFunc = {
-        0: f("MyDorm"),
-        1: f("Watching"),
-        2: f("Control"),
-        3: f("Message"),
-        4: f("Schedule")
-    };
-    //var pageSlider = PageSlider.case({callback: callback});
-
-    window.pageTabber = new PageTabber(callbackFunc);
+    window.pageTabber = new PageTabber(callFunc, leaveFunc, delayTime, callbackFunc);
 
     setDebug(title);
     setMoreBtn();
@@ -77,8 +49,29 @@ function init(title) {
     typeOnNotebook();
 
     setControl();
+}
 
-    //pageSlider.go(2);
+function setReadyPositionBeforeTab() {
+    $('.guitar-sm').css('bottom', 'calc(105% + 121px)');
+    $('.stuff-on-top').css('right', '-100%');
+    $('.stuff-on-top .logo, .stuff-on-top .tip').css('opacity', '0');
+
+    $('.watching-pc').css('left', '-96%');
+    $('.watching-tip').css('right', '-240px');
+    $('.watching-img').css('opacity', '0');
+
+    $('.control-lock-pad').css('top', '23%');
+    $('.control-lock-pad').css('opacity', '0');
+    $('.control-lock-btn').css('opacity', '0');
+
+    $('.message-window').css('opacity', '0');
+    $('.message-window-bg').css('opacity', '0');
+
+    $('#list ul li').css('left', -innerWidth / 2 + 'px');
+}
+
+function changeSbt(title) {
+    $(".title .subtitle").html(title);
 }
 
 function isVertical() {
@@ -86,9 +79,6 @@ function isVertical() {
 }
 
 function setPage() {
-
-
-
     if (isVertical()) {
         $('#copyright').css('font-size', '12px');
         $('.bottom-button').removeClass('bottom-button-width');
@@ -105,12 +95,28 @@ function setPage() {
 }
 
 function setBottomBar() {
+    // bottom-page-bar to center
     var
         bpb = $(".bottom-page-bar"),
         bpbBlank = parseFloat($('body').css('width')) - parseFloat(bpb.css('width'));
     bpb.css('left', bpbBlank / 2 + 'px');
     $(".bottom-bar").hide();
     $(".bottom-bar").fadeIn(500);
+
+    // set bottom-button
+    $('.bottom-left-button').click(function() {
+        if (pageTabber.pageNowIndex == 0)
+            pageTabber.tabTo(pageTabber.pageNowIndex - 2);
+        else
+            pageTabber.tabTo(pageTabber.pageNowIndex - 1);
+    });
+
+    $('.bottom-right-button').click(function() {
+        if (pageTabber.pageNowIndex + 2 == pageTabber.pageLen)
+            pageTabber.tabTo(pageTabber.pageNowIndex + 2);
+        else
+            pageTabber.tabTo(pageTabber.pageNowIndex + 1);
+    });
 }
 
 function setMoreBtn() {
@@ -123,10 +129,6 @@ function setMoreBtn() {
 
 
         $('.bottom-bar').fadeToggle(500);
-
-        /*$("#list").fadeToggle(500, setPage);
-        $("#display").fadeToggle(500);
-        $("#copyright").fadeToggle(500);*/
 
         if (pageTabber.pageNow.id == 'list') {
             var lastIndex = pageTabber.pages.index(pageTabber.pageLast);
@@ -166,7 +168,6 @@ function setDebug(title) {
     $(".debug h2").html(title);
     $(".debug #ua").html("UA: " + navigator.userAgent);
     $(".debug").click(function () {
-        //$(".debug div").css("display", "block");
 
         var f = function() {$(".debug div").slideToggle(500);};
         if ($(this).width() > 50)
@@ -174,65 +175,4 @@ function setDebug(title) {
         else
             $(".debug").animate({width: "100%"}, 300, function() {$(".debug div").slideToggle(300);});
     });
-}
-
-var l1 = "$ ", l2 = "", l3 = "", adder;
-
-function fresh() {
-    $("#l1").html(l1);
-    $("#l2").html(l2);
-    $("#l3").html(l3);
-}
-
-function appendText(id, text, step, delay) {
-    adder += delay;
-
-    for (var i = 0; i < text.length; ++i) {
-        adder += step;
-        setTimeout(id + '+="' + text[i] + '"; fresh();', adder);
-    }
-}
-
-function clrscr(delay) {
-    adder += delay;
-
-    rollText(0);
-    rollText(0);
-    rollText(0);
-}
-
-function rollText(delay) {
-    adder += delay;
-
-    setTimeout("l1 = l2; l2 = l3; l3 = ''; fresh();", adder);
-}
-
-var typingMutex = false;
-
-function typeOnNotebook() {
-    var cmds = [
-        "brew install",
-        "Girlfriend",
-        " available formula with the name \"girlfriend\""
-    ];
-    console.log(adder);
-    adder = 0;
-    typingMutex = true;
-
-    appendText("l1", "", 0, 0);
-    appendText("l1", "brew install", 100, 500);
-    appendText("l2", "Girlfriend", 100, 0);
-    appendText("l3", "Error: No", 5, 2000);
-    rollText(200);
-    appendText("l3", "available", 5, 0);
-    rollText(200);
-    appendText("l3", "^C", 5, 0);
-    rollText(500);
-    appendText("l3", "$ ", 5, 0);
-    appendText("l3", "clear", 5, 2000);
-    rollText(100);
-    clrscr(500);
-    appendText("l1", "$ ", 5, 0);
-
-    setTimeout("typingMutex = false;", adder);
 }

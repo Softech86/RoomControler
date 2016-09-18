@@ -84,26 +84,13 @@
     <div class="bottom-button bottom-left-button"></div>
     <div class="bottom-button bottom-right-button"></div>
     <div class="bottom-page-bar">
-        <% var listGroupName = ['Home', 'Watching', 'Control', 'Message', 'Schedule', 'Leisure', 'About'] %>
+        <% var listGroupName = ['Home', 'Watching', 'Control', 'Message', 'Schedule'] %>
         <% for (var item in listGroupName) { %>
         <div class="bottom-page-bar-item"></div>
         <% } %>
     </div>
 
     <script>
-        $('.bottom-left-button').click(function() {
-            if (pageTabber.pageNowIndex == 0)
-                pageTabber.tabTo(pageTabber.pageNowIndex - 2);
-            else
-                pageTabber.tabTo(pageTabber.pageNowIndex - 1);
-        });
-
-        $('.bottom-right-button').click(function() {
-            if (pageTabber.pageNowIndex + 2 == pageTabber.pageLen)
-                pageTabber.tabTo(pageTabber.pageNowIndex + 2);
-            else
-                pageTabber.tabTo(pageTabber.pageNowIndex + 1);
-        })
     </script>
 </div>
 

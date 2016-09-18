@@ -2,6 +2,34 @@
  * Created by leobai on 16/8/18.
  */
 
+function controlCallFunc() {
+    console.log('ccf');
+
+    $('.control-lock-pad').animate({top: '-=3%', opacity: '1'}, 300);
+    $('.control-lock-btn').animate({opacity: '1'}, 300);
+}
+
+function controlLeaveFunc() {
+    console.log('clf');
+
+    $('.control-lock-pad').animate({top: '+=3%', opacity: '0'}, 300);
+    $('.control-lock-btn').animate({opacity: '0'}, 300);
+}
+
+function controlCallBackFunc() {
+    // all have
+    if ($(".title .subtitle").html() == 'Control') {
+        return;
+    }
+
+    // all except home
+    $(".title .title").css("line-height", "35px");
+    $(".title .subtitle").fadeOut(100, function(){changeSbt('Control')}).fadeIn(300);
+
+    // only control
+    getLockStatus();
+}
+
 function setLoadingAni() {
     $('.control-lock-bg').html('...');
     setTimeout("$('.control-lock-bg').html('..');", 300);

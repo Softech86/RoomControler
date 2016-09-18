@@ -12,6 +12,7 @@ body{
     width:100%;
     height:100%;
     opacity: 0;
+    display: none;
 
     transition: all 0.5s ease-in-out;
 }
@@ -356,7 +357,7 @@ a:focus, a:hover, a:active {
     left: 8%;
     opacity: 0.9;
     display: none;
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out;*/
 }
 
 .watching-pc {
@@ -427,7 +428,6 @@ a:focus, a:hover, a:active {
     width: 80px;
     height: 80px;
     text-align: center;
-    display: none;
 }
 
 .bottom-bar {

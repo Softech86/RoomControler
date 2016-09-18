@@ -1,3 +1,40 @@
+function watchingCallFunc() {
+
+    $('.watching-pc').animate({left: '+=100%'}, 500);
+    $('.watching-img').delay(500).animate({opacity: '1'}, 200);
+
+    for (var i in $('.watching-tip')) {
+        $('.watching-tip').eq(i).delay(i * 50).animate({right: '+=240px'}, 500);
+    }
+
+}
+
+function watchingLeaveFunc() {
+    console.log('wlf');
+
+    $('.watching-pc').animate({left: '-=100%'}, 500);
+    $('.watching-img').css('opacity', '0');
+
+    for (var i in $('.watching-tip')) {
+        $('.watching-tip').eq(i).delay(i * 50).animate({right: '-=240px'}, 500);
+    }
+}
+
+function watchingCallBackFunc() {
+    // all have
+    if ($(".title .subtitle").html() == 'Watching') {
+        return;
+    }
+
+    // all except home
+    $(".title .title").css("line-height", "35px");
+    $(".title .subtitle").fadeOut(100, function(){changeSbt('Watching')}).fadeIn(300);
+
+    // only watching
+    setWatching();
+    watchingReload();
+}
+
 function loadWatchingText() {
     $(".text-update").css("stroke-dashoffset", "250");
     $(".text-update")
