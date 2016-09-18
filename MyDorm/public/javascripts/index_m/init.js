@@ -60,9 +60,9 @@ function setReadyPositionBeforeTab() {
     $('.watching-tip').css('right', '-240px');
     $('.watching-img').css('opacity', '0');
 
-    $('.control-lock-pad').css('top', '23%');
-    $('.control-lock-pad').css('opacity', '0');
+    $('.control-lock-btn').css('bottom', '70px');
     $('.control-lock-btn').css('opacity', '0');
+    $('.control-lock-pad').css('opacity', '0');
 
     $('.message-window').css('opacity', '0');
     $('.message-window-bg').css('opacity', '0');

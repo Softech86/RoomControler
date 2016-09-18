@@ -5,15 +5,15 @@
 function controlCallFunc() {
     console.log('ccf');
 
-    $('.control-lock-pad').animate({top: '-=3%', opacity: '1'}, 300);
-    $('.control-lock-btn').animate({opacity: '1'}, 300);
+    $('.control-lock-btn').animate({bottom: '+=10px', opacity: '1'}, 300);
+    $('.control-lock-pad').animate({opacity: '1'}, 300);
 }
 
 function controlLeaveFunc() {
     console.log('clf');
 
-    $('.control-lock-pad').animate({top: '+=3%', opacity: '0'}, 300);
-    $('.control-lock-btn').animate({opacity: '0'}, 300);
+    $('.control-lock-btn').animate({bottom: '-=10px', opacity: '0'}, 300);
+    $('.control-lock-pad').animate({opacity: '0'}, 300);
 }
 
 function controlCallBackFunc() {
