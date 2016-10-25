@@ -13,9 +13,9 @@
         return s;
     };
 
-    function PageTabber(callFunc, leaveFunc, delayTimeAfterCall, callbackFunc) {
+    function PageTabber(callFunc, leaveFunc, delayTimeAfterCall, callbackFunc, homepageNum) {
         this.pages = $('.section');
-        this.pageColor = ['#334', '#222', '#054', '#024', '#a33', '#000'];
+        this.pageColor = ['#334', '#222', '#054', '#987', '#966', '#000'];
         this.pageLen = this.pages.length;
         this.pageBar = $('.bottom-page-bar .bottom-page-bar-item');
         this.pageLast = null;
@@ -26,6 +26,7 @@
         this.leaveFunc = leaveFunc;
         this.callbackFunc = callbackFunc;
         this.delayTimeAfterCall = delayTimeAfterCall;
+        this.homepageNum = homepageNum;
 
         this.init();
     }
@@ -42,10 +43,20 @@
 
          if (this.callbackFunc[0])
          this.callbackFunc[0]();*/
-        $('body').css('background-color', this.pageColor[0]);
-        this.tabToFunc(0);
-        if (this.callFunc[0]) {
-            setTimeout('pageTabber.callFunc[0]()', 0 * this.delayTimeAfterCall[0]);
+
+        for (var i = 0; i < this.pageLen; ++i) {
+            if (i != this.homepageNum) {
+                if (this.callFunc[i])
+                    this.callFunc[i]();
+                if (this.leaveFunc[i])
+                    this.leaveFunc[i]();
+            }
+        }
+
+        $('body').css('background-color', this.pageColor[this.homepageNum]);
+        this.tabToFunc(this.homepageNum);
+        if (this.callFunc[this.homepageNum]) {
+            setTimeout('pageTabber.callFunc[{0}]()'.format(this.homepageNum), 0 * this.delayTimeAfterCall[this.homepageNum]);
         }
     };
 

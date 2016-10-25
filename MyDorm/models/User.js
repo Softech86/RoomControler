@@ -10,7 +10,8 @@ var UserSchema = new Schema({
     email: String,
     name: String,
     id: String,
-    password: String
+    password: String,
+    md5: String
 });
 
 // export them

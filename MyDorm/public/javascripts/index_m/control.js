@@ -37,16 +37,16 @@ function setLoadingAni() {
 }
 
 function yinyangLockAni() {
-    $('.control-lock-yin').css('left', 'calc(50% - 37px)');
-    $('.control-lock-yang').css('right', 'calc(50% - 38px)');
+    $('.control-lock-yin').css('left', 'calc(50% - 15px)');
+    $('.control-lock-yang').css('right', 'calc(50% - 15px)');
     $('.control-lock-bg').css('width', '0');
     $('.control-lock-bg').css('margin-left', 'calc(45% - 24px)');
     $('.control-lock-bg').css('opacity', '0');
 }
 
 function yinyangUnlockAni() {
-    $('.control-lock-yin').css('left', '5%');
-    $('.control-lock-yang').css('right', '5%');
+    $('.control-lock-yin').css('left', '8%');
+    $('.control-lock-yang').css('right', '8%');
     $('.control-lock-bg').css('width', 'calc(90% - 48px)');
     $('.control-lock-bg').css('margin-left', '0');
     $('.control-lock-bg').css('opacity', '0.3');

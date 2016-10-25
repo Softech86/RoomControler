@@ -41,14 +41,15 @@ function init(title) {
             5: null
         };
 
-    window.pageTabber = new PageTabber(callFunc, leaveFunc, delayTime, callbackFunc);
+    window.pageTabber = new PageTabber(callFunc, leaveFunc, delayTime, callbackFunc, 0);
 
     setDebug(title);
     setMoreBtn();
     setClock();
+    setBottomBarBtn();
     typeOnNotebook();
-
     setControl();
+    setMessageData();
 }
 
 function setReadyPositionBeforeTab() {
@@ -66,6 +67,8 @@ function setReadyPositionBeforeTab() {
 
     $('.message-window').css('opacity', '0');
     $('.message-window-bg').css('opacity', '0');
+    $('.message-window').css('height', '0');
+    $('.message-window-bg').css('height', '0');
 
     $('#list ul li').css('left', -innerWidth / 2 + 'px');
 }
@@ -76,6 +79,15 @@ function changeSbt(title) {
 
 function isVertical() {
     return innerHeight > innerWidth;
+}
+
+function scrollToPositionBInA(b, a) {
+    if (!a)
+        a = 'html, body';
+    $(a).stop(true);
+    $(a).animate({
+        scrollTop: $(b).offset().top - $(a).offset().top
+    }, 1000);
 }
 
 function setPage() {
@@ -92,6 +104,7 @@ function setPage() {
 
     setWatching();
     setBottomBar();
+    setMessage();
 }
 
 function setBottomBar() {
@@ -102,7 +115,9 @@ function setBottomBar() {
     bpb.css('left', bpbBlank / 2 + 'px');
     $(".bottom-bar").hide();
     $(".bottom-bar").fadeIn(500);
+}
 
+function setBottomBarBtn() {
     // set bottom-button
     $('.bottom-left-button').click(function() {
         if (pageTabber.pageNowIndex == 0)
@@ -117,6 +132,7 @@ function setBottomBar() {
         else
             pageTabber.tabTo(pageTabber.pageNowIndex + 1);
     });
+
 }
 
 function setMoreBtn() {

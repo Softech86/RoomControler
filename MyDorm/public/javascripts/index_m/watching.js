@@ -1,6 +1,6 @@
 function watchingCallFunc() {
 
-    $('.watching-pc').animate({left: '+=100%'}, 500);
+    $('.watching-pc, .watching-img').animate({left: '+=100%'}, 500);
     $('.watching-img').delay(500).animate({opacity: '1'}, 200);
 
     for (var i in $('.watching-tip')) {
@@ -12,7 +12,7 @@ function watchingCallFunc() {
 function watchingLeaveFunc() {
     console.log('wlf');
 
-    $('.watching-pc').animate({left: '-=100%'}, 500);
+    $('.watching-pc, .watching-img').animate({left: '-=100%'}, 500);
     $('.watching-img').css('opacity', '0');
 
     for (var i in $('.watching-tip')) {
@@ -81,7 +81,7 @@ function setWatching() {
         $('.watching-pc').css('height', 'calc(95% - 90px)');
         $('.watching-img').css('height', '41.6%');
         $('.watching-img').css('width', 'auto');
-        $('.watching-img').css('left', '6%');
+        $('.watching-img').css('left', '-94%');
 
     }
     else { // 竖屏
@@ -89,7 +89,7 @@ function setWatching() {
         $('.watching-pc').css('height', 'auto');
         $('.watching-img').css('height', 'auto');
         $('.watching-img').css('width', '87%');
-        $('.watching-img').css('left', '8%');
+        $('.watching-img').css('left', '-92%');
 
     }
 }

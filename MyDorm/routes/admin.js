@@ -1,7 +1,9 @@
 /**
  * Created by leobai on 16/8/25.
  */
-var express = require('express');
+var
+    express = require('express'),
+    md5 = require('js-md5');
 var router = express.Router();
 
 var models = require('../models/User');
@@ -43,7 +45,8 @@ router.post('/data', function(req, res, next) {
         name: data['data[]'][0],
         id: data['data[]'][1],
         email: data['data[]'][2],
-        password: data['data[]'][3]
+        password: data['data[]'][3],
+        md5: md5(data['data[]'][3])
     };
 
     //console.log(user_data);
@@ -66,7 +69,8 @@ router.get('/data', function(req, res, next) {
         email: 'YOUR@EMAIL',
         name: 'YOUR_NAME',
         id: 'YOUR_USERID',
-        password: ''
+        password: '',
+        md5: md5('')
     });
     u.save(function (err, data) {
         console.log(data);

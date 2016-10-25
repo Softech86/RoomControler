@@ -242,6 +242,7 @@ a:focus, a:hover, a:active {
 .guitar-sm {
     bottom: calc(5% + 121px);
     left: 34px;
+    transition: bottom 0.5s ease-in-out;
 }
 
 .table-sm {
@@ -290,8 +291,6 @@ a:focus, a:hover, a:active {
     position: absolute;
     border: solid;
     border-width: 0px 0px 12px 32px;
-
-    height: calc(95% - 30px);
     top: 0%;
     border-color: #fff #000;
     opacity: 0.3;
@@ -389,7 +388,7 @@ a:focus, a:hover, a:active {
     transition: all 0.5s ease-in-out;
 }
 
-.control-lock-yin {
+/*.control-lock-yin {
     position: absolute;
     left: 5%;
     top: 15px;
@@ -412,7 +411,7 @@ a:focus, a:hover, a:active {
     margin-right: -5px;
     margin-top: 5px;
     opacity: 0.8;
-}
+}*/
 
 .control-lock-btn {
     position: absolute;

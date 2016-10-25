@@ -2,23 +2,32 @@
 
 <div class="message-window-bg"></div>
 <div class="message-window">
+    <div class="message-top" hidden></div>
 
-    <div class="message-panel message-receive">
+    <!--div class="message-panel message-receive">
+        <span class="message-userCap">L</span>
+        <span class="message-createTime">12:12:12</span>
         <div class="message-title">
             LeoBai
         </div>
         <div class="message-content">
             This is a text message.
         </div>
-    </div>
+    </div-->
 
-    <div class="message-panel message-send">
+    <!--div class="message-panel message-send">
+        <span class="message-userCap">F</span>
         <div class="message-title">
             LeoBai
         </div>
         <div class="message-content">
             This is a text message.
         </div>
-    </div>
+    </div-->
+    <div class="message-load-btn">Click <b>HERE</b> to load more.</div>
+</div>
 
+<div class="message-sendBox">
+    <textarea id="message-send-content" placeholder="Send message..." rows="1"></textarea>
+    <button id="message-submit" class="btn btn-primary btn-xs">Send</button>
 </div>

@@ -8,7 +8,8 @@ function homeCallFunc() {
     $('.guitar-sm').animate({bottom: '141px'}, 500, function() {
         $('.guitar-sm').css('bottom', 'calc(5% + 121px)');
     });*/
-    $('.guitar-sm').animate({bottom: '-=100%'}, 500);
+    $('.guitar-sm').css('bottom', 'calc(5% + 121px)');
+    //$('.guitar-sm').animate({bottom: '-=100%'}, 500);
     $('.stuff-on-top').animate({right: '+=100%'}, 500);
     $('.stuff-on-top .logo, .stuff-on-top .tip').delay(500).animate({opacity: '1'}, 200);
 }
@@ -16,7 +17,8 @@ function homeCallFunc() {
 function homeLeaveFunc() {
     console.log('hlf');
 
-    $('.guitar-sm').animate({bottom: '+=100%'}, 500);
+    //$('.guitar-sm').animate({bottom: '+=100%'}, 500);
+    $('.guitar-sm').css('bottom', 'calc(105% + 121px)');
     $('.stuff-on-top').animate({right: '-=100%'}, 500);
     $('.stuff-on-top .logo, .stuff-on-top .tip').animate({opacity: '0'}, 200);
 }

@@ -1,4 +1,6 @@
-var express = require('express');
+var
+    express = require('express'),
+    md5 = require('js-md5');
 var router = express.Router();
 
 var models = require('../models/User');
@@ -10,8 +12,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-    var password = req.body.password;
-    User.find({'password': password}, {},
+    var
+        password = req.body.password,
+        pw_md5 = md5(password);
+    console.log(password);
+    User.find({'md5': pw_md5}, {},
         function(err, data) {
             console.log(err);
             console.log(data);
