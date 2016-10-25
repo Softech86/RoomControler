@@ -76,6 +76,8 @@ router.get('/downloadMessage', function(req, res, next) {
             sortFunc =function(a, b) {
                 return parseInt(a.createTimestamp) - parseInt(b.createTimestamp);
             };
+        if (!msgs.find)
+            msgs = [msgs];
 
         msgs.sort(sortFunc);
         console.log(msgs, len, from, to, latestId);
@@ -153,6 +155,14 @@ router.post('/sendMessageData', function(req, res, next) {
     );
 });
 
+router.post('/uploadImage', function(req, res, next) {
+    console.log('image upload');
+    var
+        data = req.body,
+        file = data.file;
+    console.log(req.files);
+    res.sendStatus(200);
+});
 
 
 module.exports = router;
