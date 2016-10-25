@@ -16,6 +16,7 @@
 
     "connect": "*",
 
+    "js-md5": "*",
     "mongodb": "*",
     "mongoose": "*",
     "express-mongoose": "*",
